@@ -4,6 +4,7 @@ var concat = require('gulp-concat');
 var concatCss = require('gulp-concat-css');
 var livereload = require('gulp-livereload');
 var minify = require('gulp-minify');
+var sass = require('gulp-sass');
 
 // CONCAT AND MINIFY CSS
 gulp.task('minify-concat-css', function() {
@@ -47,6 +48,7 @@ gulp.task('reload-css', ['minify-concat-css'], function() {
 gulp.task('default', function() {
 	livereload.listen();
 	gulp.watch('./*.html', ['reload']);
+	gulp.watch('./sass/*.scss', ['sass']);
 	gulp.watch('./css/*.css', ['reload-css']);
 	gulp.watch('./js/*.js', ['concat-min-js']);
 });
