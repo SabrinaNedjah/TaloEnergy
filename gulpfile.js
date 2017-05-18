@@ -1,66 +1,24 @@
-var gulp = require('gulp');
-var cleanCSS = require('gulp-clean-css');
-var concat = require('gulp-concat');
-var concatCss = require('gulp-concat-css');
-var livereload = require('gulp-livereload');
-var minify = require('gulp-minify');
-var sass = require('gulp-sass');
+var gulp        = require('gulp');
+var browserSync = require('browser-sync').create();
+var sass        = require('gulp-sass');
 
-// CONCAT AND MINIFY CSS
-gulp.task('minify-concat-css', function() {
-	return gulp
-		.src('./css/style.css')
-		.pipe(concatCss('style.min.css'))
-		.pipe(cleanCSS({ compatibility: 'ie8' }))
-		.pipe(gulp.dest('dist'));
+// Static Server + watching scss/html files
+gulp.task('serve', ['sass'], function() {
+
+    browserSync.init({
+        server: "./app"
+    });
+
+    gulp.watch("app/styles/*/**.scss", ['sass']);
+    gulp.watch("app/*.html").on('change', browserSync.reload);
 });
 
+// Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
-	return gulp
-		.src('./css/partials/*.scss')
-		.pipe(concatCss('style.min.css'))
-		.pipe(sass().on('error', sass.logError))
-		.pipe(gulp.dest('dist'));
+    return gulp.src("app/styles/*.scss")
+        .pipe(sass())
+        .pipe(gulp.dest("app/styles/css"))
+        .pipe(browserSync.stream());
 });
 
-
-gulp.task('sass:watch', function () {
-  gulp.watch('./css/partials/*.scss', ['sass']);
-});
-// CONCAT AND MINIFY JS
-gulp.task('concat-min-js', function() {
-	return (gulp
-			.src('./js/*.js')
-			//return gulp.src(['./js/file3.js', './js/file1.js', './js/file2.js'])
-			.pipe(concat('script.min.js'))
-			.pipe(
-				minify({
-					ext: {
-						min: '.js'
-					},
-					exclude: ['tasks'],
-					ignoreFiles: ['.combo.js', '-min.js'],
-					noSource: true
-				})
-			)
-			.pipe(gulp.dest('dist')) );
-});
-
-// RELOAD PAGE
-gulp.task('reload', function() {
-	//source moi et met moi dans le meme flux tout les fichier et pour tout les fichier qui passe dans le pipe refresh
-	gulp.src('./*.html').pipe(livereload());
-});
-
-// RELOAD AFTER MINIFY
-gulp.task('reload-css', ['minify-concat-css'], function() {
-	gulp.src('./*.html').pipe(livereload());
-});
-
-gulp.task('default', function() {
-	livereload.listen();
-	gulp.watch('./*.html', ['reload']);
-  gulp.watch('./css/partials/*.scss', ['sass']);
-	gulp.watch('./css/*.css', ['reload-css']);
-	gulp.watch('./js/*.js', ['concat-min-js']);
-});
+gulp.task('default', ['serve']);
