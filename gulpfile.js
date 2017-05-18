@@ -14,7 +14,19 @@ gulp.task('minify-concat-css', function() {
 		.pipe(cleanCSS({ compatibility: 'ie8' }))
 		.pipe(gulp.dest('dist'));
 });
+ 
+gulp.task('sass', function() {
+	return gulp
+		.src('./sass/*.scss')
+		.pipe(concatCss('style.min.css'))
+		.pipe(sass().on('error', sass.logError))
+		.pipe(gulp.dest('dist'));
+});
 
+
+gulp.task('sass:watch', function () {
+  gulp.watch('./sass/**/*.scss', ['sass']);
+});
 // CONCAT AND MINIFY JS
 gulp.task('concat-min-js', function() {
 	return (gulp
@@ -48,7 +60,7 @@ gulp.task('reload-css', ['minify-concat-css'], function() {
 gulp.task('default', function() {
 	livereload.listen();
 	gulp.watch('./*.html', ['reload']);
-	gulp.watch('./sass/*.scss', ['sass']);
+  gulp.watch('./sass/*.scss', ['sass']);
 	gulp.watch('./css/*.css', ['reload-css']);
 	gulp.watch('./js/*.js', ['concat-min-js']);
 });
