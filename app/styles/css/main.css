@@ -1,23 +1,78 @@
 .header {
   display: inline-block;
   width: 100%;
-  height: 75px;
+  height: 72px;
   background-color: white;
-  font-size: 20px;
-  vertical-align: middle; }
+  font-size: 20px; }
+  .header .logoTalo {
+    margin-top: -15px;
+    width: 57px; }
   .header span, .header a {
     text-transform: uppercase;
-    color: #00B4CB; }
+    text-decoration: none;
+    margin-top: 25px;
+    color: #171717;
+    transition-duration: 0.3s; }
     .header span strong, .header a strong {
-      color: black; }
-    .header span .logoTalo, .header a .logoTalo {
-      width: 57px; }
+      color: #00B4CB; }
   .header a {
-    color: black;
-    text-decoration: none; }
+    color: #434343; }
+  .header a:hover {
+    color: #00B4CB;
+    transition-duration: 0.3s; }
 
 .persAnimation {
   display: inline-block;
   width: 100%;
   height: 90vh;
-  background-color: #00B4CB; }
+  background-color: #00B4CB;
+  position: relative; }
+
+.wave {
+  display: inline-block;
+  margin: 0 auto;
+  background-image: url("../../images/vague.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: -100px; }
+
+.home1 {
+  width: 100%;
+  height: 700px; }
+  .home1 p {
+    font-size: 29px;
+    text-align: center; }
+  .home1 span {
+    display: inline-block;
+    font-size: 80px;
+    color: #00B4CB;
+    opacity: 0.14;
+    margin-left: 10vh;
+    padding-top: 5vh; }
+  .home1 img {
+    width: 160px;
+    height: 280px;
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-right: 50px; }
+  .home1 .blocsHome1 {
+    display: inline-block;
+    width: 266px;
+    height: 400px;
+    background-color: #EBEBEB;
+    margin-top: 40px;
+    margin-right: 40px; }
+    .home1 .blocsHome1 img {
+      width: 103px; }
+    .home1 .blocsHome1 h1 {
+      color: #00B4CB;
+      font-size: 25px;
+      text-align: center; }
+    .home1 .blocsHome1 p {
+      font-size: 20px;
+      color: #171717;
+      opacity: 0.77;
+      text-align: left; }

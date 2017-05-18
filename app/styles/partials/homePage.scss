@@ -3,25 +3,29 @@
 .header{
   display: inline-block;
   width: 100%;
-  height: 75px;
+  height: 72px;
   background-color: white;
   font-size: 20px;
-  vertical-align: middle;
-
+  .logoTalo{
+    margin-top: -15px;
+    width: 57px;
+  }
     span, a{
       text-transform: uppercase;
-      color: $blue;
+      text-decoration: none;
+      margin-top: 25px;
+      color:  $black;
+      transition-duration: 0.3s;
         strong{
-          color: black;
-        }
-        .logoTalo{
-          width: 57px;
+          color:$blue;
         }
     }
-
     a{
-      color: black;
-      text-decoration: none;
+      color : $darkgrey;
+    }
+    a:hover{
+      color:$blue;
+      transition-duration: 0.3s;
     }
 };
 
@@ -30,4 +34,64 @@
   width: 100%;
   height: 90vh;
   background-color: $blue;
+  position: relative;
+};
+
+.wave{
+  display: inline-block;
+  margin : 0 auto;
+  background-image: url("../../images/vague.png");
+  background-position: bottom;
+  background-repeat : no-repeat;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: -100px;
+
 }
+
+.home1{
+  width: 100%;
+  height: 700px;
+  p{
+    font-size: 29px;
+    text-align: center;
+  }
+  span{
+    display: inline-block;
+    font-size: 80px;
+    color: $blue;
+    opacity: 0.14;
+    margin-left: 10vh;
+    padding-top: 5vh;
+  }
+  img{
+    width: 160px;
+    height: 280px;
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-right: 50px;
+  }
+  .blocsHome1{
+    display: inline-block;
+    width: 266px;
+    height: 400px;
+    background-color: $grey;
+    margin-top: 40px;
+    margin-right: 40px;
+    img{
+      width: 103px;
+    }
+    h1{
+      color: $blue;
+      font-size: 25px;
+      text-align: center;
+    }
+    p{
+      font-size: 20px;
+      color: $black;
+      opacity: 0.77;
+      text-align: left;
+    }
+  }
+};
