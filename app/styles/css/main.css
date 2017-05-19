@@ -44,14 +44,15 @@
   height: 700px; }
   .home1 p {
     font-size: 29px;
+    position: relative;
+    margin-top: 0px;
     text-align: center; }
   .home1 span {
     display: inline-block;
     font-size: 80px;
     color: #00B4CB;
     opacity: 0.14;
-    margin-left: 10vh;
-    padding-top: 5vh; }
+    margin-left: 10vh; }
   .home1 img {
     width: 160px;
     height: 280px;
@@ -60,19 +61,42 @@
     margin-right: 50px; }
   .home1 .blocsHome1 {
     display: inline-block;
+    text-align: center;
     width: 266px;
-    height: 400px;
+    height: 430px;
     background-color: #EBEBEB;
     margin-top: 40px;
     margin-right: 40px; }
-    .home1 .blocsHome1 img {
-      width: 103px; }
+    .home1 .blocsHome1 .roundH1 {
+      margin-top: 20px;
+      display: inline-block;
+      border-radius: 50%;
+      background-color: white;
+      width: 105px;
+      height: 105px; }
+      .home1 .blocsHome1 .roundH1 img {
+        display: inline-block;
+        text-align: center;
+        margin: 0;
+        margin-top: 25px;
+        width: 60px;
+        height: 60px; }
     .home1 .blocsHome1 h1 {
       color: #00B4CB;
+      margin-top: 10px;
       font-size: 25px;
+      text-transform: uppercase;
       text-align: center; }
     .home1 .blocsHome1 p {
-      font-size: 20px;
+      font-size: 19px;
       color: #171717;
       opacity: 0.77;
       text-align: left; }
+
+.home2 {
+  display: inline-block;
+  width: 100%;
+  height: 100vh;
+  background-color: #00B4CB; }
+  .home2 .imageSlide {
+    width: 30px; }
