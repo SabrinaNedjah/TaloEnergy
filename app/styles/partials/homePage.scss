@@ -1,50 +1,62 @@
 @import "variables";
+
 .row.no-pad {
-  margin-right:0;
-  margin-left:0;
+  margin-right: 0;
+  margin-left: 0;
 }
+
 .row.no-pad > [class*='col-'] {
-  padding-right:0;
-  padding-left:0;
+  padding-right: 0;
+  padding-left: 0;
 }
+
 .center-block {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-body{
+
+body {
   background-color: $white;
+  margin: 0;
 }
-.header{
+
+.header {
   display: inline-block;
   width: 100%;
   height: 72px;
   background-color: white;
   font-size: 20px;
-  .logoTalo{
+
+  .logoTalo {
     margin-top: -15px;
     width: 57px;
   }
-    span, a{
-      text-transform: uppercase;
-      text-decoration: none;
-      margin-top: 25px;
-      color:  $black;
-      transition-duration: 0.3s;
-        strong{
-          color:$blue;
-        }
+
+  a,
+  span {
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 25px;
+    color: $black;
+    transition-duration: 0.3s;
+
+    strong {
+      color: $blue;
     }
-    a{
-      color : $darkgrey;
-    }
-    a:hover{
-      color:$blue;
-      transition-duration: 0.3s;
-    }
+  }
+
+  a {
+    color: $darkgrey;
+  }
+
+  a:hover {
+    color: $blue;
+    transition-duration: 0.3s;
+  }
 };
 
-.persAnimation{
+.persAnimation {
   display: inline-block;
   width: 100%;
   height: 90vh;
@@ -52,31 +64,34 @@ body{
   position: relative;
 };
 
-.wave{
+.wave {
   display: inline-block;
-  margin : 0 auto;
+  margin: 0 auto;
   background-image: url("../../images/vague.png");
   background-position: bottom;
-  background-repeat : no-repeat;
+  background-repeat: no-repeat;
   width: 100%;
   height: 100px;
   position: absolute;
   bottom: -100px;
 };
 
-.home1{
+.home1 {
   width: 100%;
   height: 100vh;
   font-family: $openSans;
   text-align: center;
-  .homeTitle1{
+
+  .homeTitle1 {
     margin-top: 13vh;
     position: relative;
     display: inline-block;
-    p{
+
+    p {
       font-size: 29px;
     }
-    span{
+
+    span {
       display: inline-block;
       position: absolute;
       top: -40px;
@@ -87,14 +102,16 @@ body{
       margin-left: 10vh;
     }
   }
-  img{
+
+  img {
     width: 160px;
     height: 280px;
     margin-top: 100px;
     margin-left: 30px;
     margin-right: 50px;
   }
-  .blocsHome1{
+
+  .blocsHome1 {
     display: inline-block;
     text-align: center;
     width: 266px;
@@ -102,30 +119,29 @@ body{
     background-color: $grey;
     margin-top: 40px;
     margin-right: 40px;
-    .roundH1{
+    .roundH1 {
       margin-top: 20px;
       display: inline-block;
       border-radius: 50%;
       background-color: white;
       width: 105px;
       height: 105px;
-      img{
+      img {
         display: inline-block;
         text-align: center;
-        margin: 0;
-        margin-top: 25px;
+        margin: 25px 0 0;
         width: 60px;
         height: 60px;
       }
     }
-    h1{
+    h1 {
       color: $blue;
       margin-top: 10px;
       font-size: 25px;
       text-transform: uppercase;
       text-align: center;
     }
-    p{
+    p {
       font-size: 19px;
       color: $black;
       opacity: 0.77;
@@ -134,75 +150,165 @@ body{
   }
 };
 
-.home2{
+.home2 {
   display: inline-block;
   width: 100%;
   height: 100vh;
   background-color: $blue;
   font-family: $openSans;
-    .homeTitle3{
-      width: 100%;
-      color: $white;
-      font-family: $openSans;
-      margin-top: 13vh;
-      position: relative;
-      display: inline-block;
-      padding-left: 120px;
-      p{
-        font-size: 29px;
-      }
-      span{
-        display: inline-block;
-        position: absolute;
-        top: -100%;
-        left: 6%;
-        font-size: 80px;
-        color: $white;
-        opacity: 0.20;
-      }
-    }
-    .slider{
-      display: inline-block;
-      text-align: center;
-      width: 80%;
-      height: 567px;
-      background-color: $lightgrey;
-    }
-  };
-  .wave2{
-    display: inline-block;
-    background-image: url("../../images/vague2.png");
-    height: 145px;
+  .homeTitle3 {
     width: 100%;
-    -webkit-box-shadow:inset 0px 40px 0px 0px $blue;
-    -moz-box-shadow:inset 0px 40px 0px 0px $blue;
-    box-shadow:inset 0px 40px 0px 0px $blue;
+    color: $white;
+    font-family: $openSans;
+    margin-top: 13vh;
+    position: relative;
+    display: inline-block;
+    padding-left: 120px;
+    p {
+      font-size: 29px;
+    }
+    span {
+      display: inline-block;
+      position: absolute;
+      top: -100%;
+      left: 6%;
+      font-size: 80px;
+      color: $white;
+      opacity: 0.20;
+    }
   }
-  .home3{
-      width: 100%;
-      display: inline-block;
-      text-align: center;
-    .coupleTalo{
+  .slider {
+    display: inline-block;
+    text-align: center;
+    width: 80%;
+    height: 567px;
+    background-color: $lightgrey;
+  }
+};
 
-    }
-    h2{
+.wave2 {
+  display: inline-block;
+  background-image: url("../../images/vague2.png");
+  height: 145px;
+  width: 100%;
+  -webkit-box-shadow: inset 0 40px 0 0 $blue;
+  -moz-box-shadow: inset 0 40px 0 0 $blue;
+  box-shadow: inset 0 40px 0 0 $blue;
+}
+
+.home3 {
+  display: inline-block;
+  width: 100%;
+  height: 100vh;
+  .coupleTalo {}
+  .priceQuote {
+    display: inline-block;
+    margin-top: 40px;
+    padding-left: 60px;
+    background-color: $grey;
+    height: 180px;
+    box-shadow: 0 3px 6px 0 $grey;
+    h2 {
       color: $blue;
-      font-size: 20px;
-      margin-bottom: 30px;
+      font-size: 25px;
     }
-    .roundsH3{
-      text-align: center;
-      .roundH3{
-        display: inline-block;
-        width: 92px;
-        height: 92px;
-        background-color: $lightgrey;
-        border-radius: 50%;
-      }
+    p {
+      font-size: 22px;
+      color: $black;
     }
-    .roundQuote{
+    .priceIcon {
+      position: absolute;
+      top: -20%;
+      left: -10%;
+    }
+    .arrowRight {
+      position: absolute;
+      bottom: 3%;
+      right: 3%;
+    }
+  }
+};
+
+.home4 {
+  margin-top: 60px;
+  height: 80vh;
+  text-align: center;
+  .homeTitle4 {
+    display: inline-block;
+    position: relative;
+    font-family: $openSans;
+    width: 100%;
+    p {
       display: inline-block;
-      background-color: white;
-      height: 205px;
+      font-size: 29px;
+      color: $black;
     }
-  };
+    span {
+      display: inline-block;
+      position: absolute;
+      bottom: -30%;
+      left: 23%;
+      font-size: 80px;
+      color: $blue;
+      opacity: 0.14;
+    }
+  }
+  .works4 {
+    display: inline-block;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    width: 100%;
+    vertical-align: middle;
+    .woodQuote{
+      margin-right: 100px;
+    }
+    .thermometerQuote{
+      margin-left: 100px;
+    }
+    div {
+      display: inline-block;
+      text-align: center;
+      max-width: 110px;
+      max-height: 85px;
+    }
+    span {
+      display: inline-block;
+      margin-top: 25px;
+      width: 100%;
+      font-size: 20px;
+      color: $black;
+    }
+  }
+  a{
+    display: inline-block;
+    padding: 0px 40px 5px 40px;
+    box-shadow: 0 3px 1px 3px $grey;
+    background-color: $grey;
+    font-style: 28px;
+    color: $blue;
+    text-decoration: none;
+    transition-duration: 0.5s;
+  }
+  a:hover{
+    background-color: $blue;
+    color: $white;
+    transition-duration: 0.5s;
+  }
+};
+.wave3{
+  display: inline-block;
+  width: 100%;
+  height: 80px;
+  box-shadow: 0px 20px 0px 20px $blue;
+  margin: 0 auto;
+  background-image: url("../../images/wave3.png");
+  background-position: top;
+  background-repeat: no-repeat;
+
+}
+.footer{
+  display: inline-block;
+  width: 100%;
+  height: 200px;
+  background-color: $blue;
+}
