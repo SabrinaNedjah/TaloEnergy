@@ -25,14 +25,31 @@ body {
   display: inline-block;
   width: 100%;
   height: 72px;
-  background-color: white;
+  background-color: $white;
   font-size: 20px;
-
   .logoTalo {
     margin-top: -15px;
     width: 57px;
   }
-
+  .sectionPro{
+    display: inline-block;
+    font-size: 12px;
+    margin-top: 25px;
+    background-color: $darkgrey;
+    padding: 5px 10px 5px 10px;
+    box-shadow: 0 3px 1px 3px $grey;
+    transition-duration: 0.5s;
+    span{
+      color: $white;
+    }
+  }
+  .sectionPro:hover{
+    background-color: $white;
+    transition-duration: 0.5s;
+    span{
+      color: $darkgrey;
+    }
+  }
   a,
   span {
     text-transform: uppercase;
@@ -40,19 +57,19 @@ body {
     margin-top: 25px;
     color: $black;
     transition-duration: 0.3s;
-
     strong {
       color: $blue;
     }
   }
-
   a {
     color: $darkgrey;
   }
-
   a:hover {
     color: $blue;
     transition-duration: 0.3s;
+  }
+  .is-active{
+    color: $blue;
   }
 };
 
@@ -160,7 +177,7 @@ body {
     width: 100%;
     color: $white;
     font-family: $openSans;
-    margin-top: 13vh;
+    margin-top: 10vh;
     position: relative;
     display: inline-block;
     padding-left: 120px;
@@ -200,13 +217,18 @@ body {
   display: inline-block;
   width: 100%;
   height: 100vh;
-  .coupleTalo {}
+  text-align: center;
+  .videoExplainer{
+    width: 788px;
+    height: 400px;
+    margin-bottom : 60px;
+  }
   .priceQuote {
     display: inline-block;
     margin-top: 40px;
     padding-left: 60px;
     background-color: $grey;
-    height: 180px;
+    height: 150px;
     box-shadow: 0 3px 6px 0 $grey;
     h2 {
       color: $blue;
@@ -221,17 +243,12 @@ body {
       top: -20%;
       left: -10%;
     }
-    .arrowRight {
-      position: absolute;
-      bottom: 3%;
-      right: 3%;
-    }
   }
 };
 
 .home4 {
   margin-top: 60px;
-  height: 80vh;
+  height: 70vh;
   text-align: center;
   .homeTitle4 {
     display: inline-block;
@@ -311,4 +328,23 @@ body {
   width: 100%;
   height: 200px;
   background-color: $blue;
+  color: $white;
+  text-transform: uppercase;
+  text-align: center;
+  h2{
+    font-size: 20px;
+  }
+  .infosFooter{
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 15px;
+    span{
+      display: inline-block;
+      margin-right: 30px;
+      a{
+        text-decoration: none;
+        color: $white;
+      }
+    }
+  }
 }

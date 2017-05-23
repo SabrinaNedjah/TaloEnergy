@@ -19,11 +19,26 @@ body {
   display: inline-block;
   width: 100%;
   height: 72px;
-  background-color: white;
+  background-color: #F6F6F6;
   font-size: 20px; }
   .header .logoTalo {
     margin-top: -15px;
     width: 57px; }
+  .header .sectionPro {
+    display: inline-block;
+    font-size: 12px;
+    margin-top: 25px;
+    background-color: #434343;
+    padding: 5px 10px 5px 10px;
+    box-shadow: 0 3px 1px 3px #EBEBEB;
+    transition-duration: 0.5s; }
+    .header .sectionPro span {
+      color: #F6F6F6; }
+  .header .sectionPro:hover {
+    background-color: #F6F6F6;
+    transition-duration: 0.5s; }
+    .header .sectionPro:hover span {
+      color: #434343; }
   .header a,
   .header span {
     text-transform: uppercase;
@@ -39,6 +54,8 @@ body {
   .header a:hover {
     color: #00B4CB;
     transition-duration: 0.3s; }
+  .header .is-active {
+    color: #00B4CB; }
 
 .persAnimation {
   display: inline-block;
@@ -127,7 +144,7 @@ body {
     width: 100%;
     color: #F6F6F6;
     font-family: "Open Sans", sans-serif;
-    margin-top: 13vh;
+    margin-top: 10vh;
     position: relative;
     display: inline-block;
     padding-left: 120px; }
@@ -160,13 +177,18 @@ body {
 .home3 {
   display: inline-block;
   width: 100%;
-  height: 100vh; }
+  height: 100vh;
+  text-align: center; }
+  .home3 .videoExplainer {
+    width: 788px;
+    height: 400px;
+    margin-bottom: 60px; }
   .home3 .priceQuote {
     display: inline-block;
     margin-top: 40px;
     padding-left: 60px;
     background-color: #EBEBEB;
-    height: 180px;
+    height: 150px;
     box-shadow: 0 3px 6px 0 #EBEBEB; }
     .home3 .priceQuote h2 {
       color: #00B4CB;
@@ -178,14 +200,10 @@ body {
       position: absolute;
       top: -20%;
       left: -10%; }
-    .home3 .priceQuote .arrowRight {
-      position: absolute;
-      bottom: 3%;
-      right: 3%; }
 
 .home4 {
   margin-top: 60px;
-  height: 80vh;
+  height: 70vh;
   text-align: center; }
   .home4 .homeTitle4 {
     display: inline-block;
@@ -253,4 +271,19 @@ body {
   display: inline-block;
   width: 100%;
   height: 200px;
-  background-color: #00B4CB; }
+  background-color: #00B4CB;
+  color: #F6F6F6;
+  text-transform: uppercase;
+  text-align: center; }
+  .footer h2 {
+    font-size: 20px; }
+  .footer .infosFooter {
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 15px; }
+    .footer .infosFooter span {
+      display: inline-block;
+      margin-right: 30px; }
+      .footer .infosFooter span a {
+        text-decoration: none;
+        color: #F6F6F6; }
