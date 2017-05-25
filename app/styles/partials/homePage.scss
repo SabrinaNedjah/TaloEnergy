@@ -1,8 +1,372 @@
-.header{
+@import "variables";
+
+
+.row.no-pad {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.row.no-pad > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-color: $white;
+  margin: 0;
+}
+.hamburgerHeader{
+  display: none;
+  @media screen and (max-width: $break-small) {
+    display: inline-block;
+  }
+  .hamburger{
+    background-color: $white;
+  }
+  .hamburgerNav{
+    display: none;
+    height: 100vh;
+    width: 100%;
+    background-color: $white;
+    color: $blue;
+  }
+  .logoHamburger{
+    display: inline-block;
+  }
+};
+.header {
+  display: inline-block;
   width: 100%;
-  height: 75px;
-  background-color: blue;
-  p{
-    color: black;
+  height: 72px;
+  background-color: $white;
+  font-size: 20px;
+  @media screen and (max-width: $break-small) {
+    display: none;
+  }
+  .logoTalo {
+    margin-top: -15px;
+    width: 57px;
+  }
+  .sectionPro{
+    display: inline-block;
+    font-size: 12px;
+    margin-top: 25px;
+    background-color: $darkgrey;
+    padding: 5px 10px 5px 10px;
+    box-shadow: 0 3px 1px 3px $grey;
+    transition-duration: 0.5s;
+    span{
+      color: $white;
+    }
+  }
+  .sectionPro:hover{
+    background-color: $white;
+    transition-duration: 0.5s;
+    span{
+      color: $darkgrey;
+    }
+  }
+  a,
+  span {
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 25px;
+    color: $black;
+    transition-duration: 0.3s;
+    strong {
+      color: $blue;
+    }
+  }
+  a {
+    color: $darkgrey;
+  }
+  a:hover {
+    color: $blue;
+    transition-duration: 0.3s;
+  }
+  .is-active{
+    color: $blue;
+  }
+};
+
+.persAnimation {
+  display: inline-block;
+  width: 100%;
+  height: 90vh;
+  background-color: $blue;
+  position: relative;
+};
+
+.wave {
+  display: inline-block;
+  margin: 0 auto;
+  background-image: url("../../images/vague.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: -100px;
+};
+
+.home1 {
+  width: 100%;
+  height: 100vh;
+  font-family: $openSans;
+  text-align: center;
+
+  .homeTitle1 {
+    margin-top: 13vh;
+    position: relative;
+    display: inline-block;
+
+    p {
+      font-size: 29px;
+    }
+
+    span {
+      display: inline-block;
+      position: absolute;
+      top: -40px;
+      left: -100px;
+      font-size: 80px;
+      color: $blue;
+      opacity: 0.14;
+      margin-left: 10vh;
+    }
+  }
+
+  img {
+    width: 160px;
+    height: 280px;
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-right: 50px;
+  }
+
+  .blocsHome1 {
+    display: inline-block;
+    text-align: center;
+    width: 266px;
+    height: 430px;
+    background-color: $grey;
+    margin-top: 40px;
+    margin-right: 40px;
+    .roundH1 {
+      margin-top: 20px;
+      display: inline-block;
+      border-radius: 50%;
+      background-color: white;
+      width: 105px;
+      height: 105px;
+      img {
+        display: inline-block;
+        text-align: center;
+        margin: 25px 0 0;
+        width: 60px;
+        height: 60px;
+      }
+    }
+    h1 {
+      color: $blue;
+      margin-top: 10px;
+      font-size: 25px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    p {
+      font-size: 19px;
+      color: $black;
+      opacity: 0.77;
+      text-align: left;
+    }
+  }
+};
+
+.home2 {
+  display: inline-block;
+  width: 100%;
+  height: 100vh;
+  background-color: $blue;
+  font-family: $openSans;
+  .homeTitle3 {
+    width: 100%;
+    color: $white;
+    font-family: $openSans;
+    margin-top: 10vh;
+    position: relative;
+    display: inline-block;
+    padding-left: 120px;
+    p {
+      font-size: 29px;
+    }
+    span {
+      display: inline-block;
+      position: absolute;
+      top: -100%;
+      left: 6%;
+      font-size: 80px;
+      color: $white;
+      opacity: 0.20;
+    }
+  }
+  .slider {
+    display: inline-block;
+    text-align: center;
+    width: 80%;
+    height: 567px;
+    background-color: $lightgrey;
+  }
+};
+
+.wave2 {
+  display: inline-block;
+  background-image: url("../../images/vague2.png");
+  height: 145px;
+  width: 100%;
+  -webkit-box-shadow: inset 0 40px 0 0 $blue;
+  -moz-box-shadow: inset 0 40px 0 0 $blue;
+  box-shadow: inset 0 40px 0 0 $blue;
+}
+
+.home3 {
+  display: inline-block;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  .videoExplainer{
+    width: 788px;
+    height: 400px;
+    margin-bottom : 60px;
+  }
+  .priceQuote {
+    display: inline-block;
+    margin-top: 40px;
+    padding-left: 60px;
+    background-color: $grey;
+    height: 150px;
+    box-shadow: 0 3px 6px 0 $grey;
+    h2 {
+      color: $blue;
+      font-size: 25px;
+    }
+    p {
+      font-size: 22px;
+      color: $black;
+    }
+    .priceIcon {
+      position: absolute;
+      top: -20%;
+      left: -10%;
+    }
+  }
+};
+
+.home4 {
+  margin-top: 60px;
+  height: 70vh;
+  text-align: center;
+  .homeTitle4 {
+    display: inline-block;
+    position: relative;
+    font-family: $openSans;
+    width: 100%;
+    p {
+      display: inline-block;
+      font-size: 29px;
+      color: $black;
+    }
+    span {
+      display: inline-block;
+      position: absolute;
+      bottom: -30%;
+      left: 23%;
+      font-size: 80px;
+      color: $blue;
+      opacity: 0.14;
+    }
+  }
+  .works4 {
+    display: inline-block;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    width: 100%;
+    vertical-align: middle;
+    .woodQuote{
+      margin-right: 100px;
+    }
+    .thermometerQuote{
+      margin-left: 100px;
+    }
+    div {
+      display: inline-block;
+      text-align: center;
+      max-width: 110px;
+      max-height: 85px;
+    }
+    span {
+      display: inline-block;
+      margin-top: 25px;
+      width: 100%;
+      font-size: 20px;
+      color: $black;
+    }
+  }
+  a{
+    display: inline-block;
+    padding: 0px 40px 5px 40px;
+    box-shadow: 0 3px 1px 3px $grey;
+    background-color: $grey;
+    font-style: 28px;
+    color: $blue;
+    text-decoration: none;
+    transition-duration: 0.5s;
+  }
+  a:hover{
+    background-color: $blue;
+    color: $white;
+    transition-duration: 0.5s;
+  }
+};
+.wave3{
+  display: inline-block;
+  width: 100%;
+  height: 80px;
+  box-shadow: 0px 20px 0px 20px $blue;
+  margin: 0 auto;
+  background-image: url("../../images/wave3.png");
+  background-position: top;
+  background-repeat: no-repeat;
+
+}
+.footer{
+  display: inline-block;
+  width: 100%;
+  height: 200px;
+  background-color: $blue;
+  color: $white;
+  text-transform: uppercase;
+  text-align: center;
+  h2{
+    font-size: 20px;
+  }
+  .infosFooter{
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 15px;
+    span{
+      display: inline-block;
+      margin-right: 30px;
+      a{
+        text-decoration: none;
+        color: $white;
+      }
+    }
   }
 }
