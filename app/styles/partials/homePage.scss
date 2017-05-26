@@ -1,6 +1,5 @@
 @import "variables";
 
-
 .row.no-pad {
   margin-right: 0;
   margin-left: 0;
@@ -21,34 +20,13 @@ body {
   background-color: $white;
   margin: 0;
 }
-.hamburgerHeader{
-  display: none;
-  @media screen and (max-width: $break-small) {
-    display: inline-block;
-  }
-  .hamburger{
-    background-color: $white;
-  }
-  .hamburgerNav{
-    display: none;
-    height: 100vh;
-    width: 100%;
-    background-color: $white;
-    color: $blue;
-  }
-  .logoHamburger{
-    display: inline-block;
-  }
-};
+
 .header {
   display: inline-block;
   width: 100%;
   height: 72px;
   background-color: $white;
   font-size: 20px;
-  @media screen and (max-width: $break-small) {
-    display: none;
-  }
   .logoTalo {
     margin-top: -15px;
     width: 57px;

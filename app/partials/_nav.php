@@ -1,14 +1,4 @@
 
-  <header class="hamburgerHeader">
-    <button class="hamburger hamburger--spring" type="button">
-      <span class="hamburger-box">
-        <span class="hamburger-inner"></span>
-      </span>
-    </button>
-    <img class="logoHamburger" src="images/logoTalo.png" alt="logoTalo">
-    <div class="hamburgerNav">
-    </div>
-  </header>
   <header class="header">
     <div class="container">
       <div class="row">
@@ -20,5 +10,4 @@
         <a class="sectionPro" href="#"><span>ESPACE PRO</span></a>
       </div>
     </div>
-
   </header>
