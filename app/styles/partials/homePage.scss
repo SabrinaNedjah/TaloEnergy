@@ -21,12 +21,47 @@ body {
   margin: 0;
 }
 
+.hamburgerHeader{
+  display: none;
+  position: fixed;
+  z-index: 1002;
+  background-color: $grey;
+  width: 100%;
+  @media screen and (max-width: $break-small) {
+    display: inline-block;
+  }
+  .hamburger{
+    display: inline-block;
+    background-color: $blue;
+    margin-right: 60px;
+  }
+  .hamburgerNav{
+    display: none;
+    height: 100vh;
+    width: 100%;
+    background-color: $white;
+    color: $blue;
+    position: relative;
+    z-index: 1000;
+  }
+  .titleHeader{
+    display: inline-block;
+    font-size: 21px;
+    strong{
+      color: $blue;
+    }
+  }
+};
+
 .header {
   display: inline-block;
   width: 100%;
   height: 72px;
   background-color: $white;
   font-size: 20px;
+  @media screen and (max-width: $break-small) {
+    display: none;
+  }
   .logoTalo {
     margin-top: -15px;
     width: 57px;
@@ -79,6 +114,9 @@ body {
   height: 90vh;
   background-color: $blue;
   position: relative;
+  @media screen and (max-width: $break-small) {
+    display: none;
+  }
 };
 
 .wave {
@@ -91,6 +129,9 @@ body {
   height: 100px;
   position: absolute;
   bottom: -100px;
+  @media screen and (max-width: $break-small) {
+    display: none;
+  }
 };
 
 .home1 {
@@ -100,12 +141,15 @@ body {
   text-align: center;
 
   .homeTitle1 {
-    margin-top: 13vh;
+    margin-top: 16vh;
     position: relative;
     display: inline-block;
 
     p {
       font-size: 29px;
+      @media screen and (max-width: $break-small) {
+        font-size: 20px;
+      }
     }
 
     span {
@@ -117,52 +161,87 @@ body {
       color: $blue;
       opacity: 0.14;
       margin-left: 10vh;
+      @media screen and (max-width: $break-small) {
+        font-size: 50px;
+        top: -30px;
+        left: -30px;
+      }
     }
   }
 
   img {
+    display: inline-block;
     width: 160px;
     height: 280px;
-    margin-top: 100px;
     margin-left: 30px;
     margin-right: 50px;
+    margin-bottom: 300px;
+    @media screen and (max-width: $break-small) {
+      display: none;
+    }
   }
-
-  .blocsHome1 {
+  .home1Content{
     display: inline-block;
     text-align: center;
-    width: 266px;
-    height: 430px;
-    background-color: $grey;
-    margin-top: 40px;
-    margin-right: 40px;
-    .roundH1 {
-      margin-top: 20px;
+    .blocsHome1 {
       display: inline-block;
-      border-radius: 50%;
-      background-color: white;
-      width: 105px;
-      height: 105px;
-      img {
-        display: inline-block;
-        text-align: center;
-        margin: 25px 0 0;
-        width: 60px;
-        height: 60px;
-      }
-    }
-    h1 {
-      color: $blue;
-      margin-top: 10px;
-      font-size: 25px;
-      text-transform: uppercase;
       text-align: center;
-    }
-    p {
-      font-size: 19px;
-      color: $black;
-      opacity: 0.77;
-      text-align: left;
+      width: 267px;
+      height: 430px;
+      background-color: $grey;
+      margin-top: 40px;
+      margin-right: 40px;
+      @media screen and (max-width: $break-small) {
+        width: 90%;
+        margin-right: 0;
+        height: 40vh;
+      }
+      .roundH1 {
+        margin-top: 20px;
+        display: inline-block;
+        border-radius: 50%;
+        background-color: white;
+        width: 105px;
+        height: 105px;
+        @media screen and (max-width: $break-small) {
+          width: 50px;
+          height: 50px;
+          margin-top: 10px;
+        }
+        img {
+          display: inline-block;
+          text-align: center;
+          margin: 25px 0 0;
+          width: 60px;
+          height: 60px;
+          @media screen and (max-width: $break-small) {
+            width: 30px;
+            height: 30px;
+            margin: 10px 0 0;
+          }
+        }
+      }
+      h1 {
+        color: $blue;
+        margin-top: 10px;
+        font-size: 25px;
+        text-transform: uppercase;
+        text-align: center;
+        @media screen and (max-width: $break-small) {
+          font-size: 19px;
+          margin-top: 7px;
+        }
+      }
+      p {
+        font-size: 19px;
+        color: $black;
+        opacity: 0.77;
+        text-align: left;
+        padding-left: 8px;
+        @media screen and (max-width: $break-small) {
+          font-size: 18px;
+        }
+      }
     }
   }
 };
@@ -173,6 +252,9 @@ body {
   height: 100vh;
   background-color: $blue;
   font-family: $openSans;
+  @media screen and (max-width: $break-small) {
+    height: auto;
+  }
   .homeTitle3 {
     width: 100%;
     color: $white;
@@ -181,6 +263,11 @@ body {
     position: relative;
     display: inline-block;
     padding-left: 120px;
+    @media screen and (max-width: $break-small) {
+      width: 100%;
+      padding-left: 5vh;
+      margin-top: 0;
+    }
     p {
       font-size: 29px;
     }
@@ -192,6 +279,11 @@ body {
       font-size: 80px;
       color: $white;
       opacity: 0.20;
+      @media screen and (max-width: $break-small) {
+        top: 0;
+        left: 30%;
+        font-size: 50px;
+      }
     }
   }
   .slider {
@@ -200,6 +292,9 @@ body {
     width: 80%;
     height: 567px;
     background-color: $lightgrey;
+    @media screen and (max-width: $break-small) {
+      display: none;
+    }
   }
 };
 
@@ -211,6 +306,9 @@ body {
   -webkit-box-shadow: inset 0 40px 0 0 $blue;
   -moz-box-shadow: inset 0 40px 0 0 $blue;
   box-shadow: inset 0 40px 0 0 $blue;
+  @media screen and (max-width: $break-small) {
+    display: none;
+  }
 }
 
 .home3 {
@@ -218,18 +316,32 @@ body {
   width: 100%;
   height: 100vh;
   text-align: center;
+  @media screen and (max-width: $break-small) {
+    background-color: red;
+    height: 50vh;
+  }
   .videoExplainer{
     width: 788px;
     height: 400px;
     margin-bottom : 60px;
+    @media screen and (max-width: $break-small) {
+      width: 80%;
+      height: 40vh;
+    }
   }
   .priceQuote {
     display: inline-block;
+    position: relative;
     margin-top: 40px;
+    width: 100vh;
     padding-left: 60px;
+    padding-right: 60px;
     background-color: $grey;
     height: 150px;
     box-shadow: 0 3px 6px 0 $grey;
+    @media screen and (max-width: $break-small) {
+      display: none;
+    }
     h2 {
       color: $blue;
       font-size: 25px;
@@ -240,8 +352,8 @@ body {
     }
     .priceIcon {
       position: absolute;
-      top: -20%;
-      left: -10%;
+      top: -25%;
+      left: -8%;
     }
   }
 };
@@ -250,6 +362,9 @@ body {
   margin-top: 60px;
   height: 70vh;
   text-align: center;
+  @media screen and (max-width: $break-small) {
+    display: none;
+  }
   .homeTitle4 {
     display: inline-block;
     position: relative;
