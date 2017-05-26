@@ -65,6 +65,4 @@ if(!$mail->send()) {
 }
 }
 ?>
- <?php
- require("partials/_footer.php");
- ?>
+<?php require("partials/_footer.php"); ?>
