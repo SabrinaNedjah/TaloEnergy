@@ -9,7 +9,9 @@
      <span><a href="#">MENTIONS LÉGALES</a></span>
    </div>
  </footer>
- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+
+ <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+ <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
  <script type="text/javascript" src="scripts/index.js"></script>
 </body>
