@@ -868,23 +868,30 @@ body {
           top: 0;
           left: 30%;
           font-size: 50px; } }
-  @media screen and (max-width: 665px) {
-    .home2 .slider {
-      display: none; } }
-  .home2 .slider .center-slide {
-    width: 568px; }
-    .home2 .slider .center-slide .imgSlide {
+  .home2 .slider {
+    font-family: "Open Sans", sans-serif; }
+    .home2 .slider .imgSlide {
       position: relative;
       text-align: center;
       display: inline-block;
-      height: 270px;
       background-image: url("../../images/clientTalo.png");
       background-size: cover;
+      height: 190px;
+      max-height: 100%;
       color: #F6F6F6;
-      font-size: 21px; }
-      .home2 .slider .center-slide .imgSlide span em {
-        color: #00B4CB; }
-    .home2 .slider .center-slide .imgCaption {
+      box-shadow: 0px 4px 0px 0px #EBEBEB;
+      font-size: 17px; }
+      .home2 .slider .imgSlide p {
+        display: inline-block;
+        width: 80%;
+        margin-top: 70px; }
+      .home2 .slider .imgSlide span {
+        display: inline-block;
+        width: 100%;
+        text-align: center; }
+        .home2 .slider .imgSlide span em {
+          color: #00B4CB; }
+    .home2 .slider .imgCaption {
       display: inline-block;
       background-color: #F6F6F6; }
 
@@ -907,7 +914,7 @@ body {
   text-align: center; }
   @media screen and (max-width: 665px) {
     .home3 {
-      background-color: red;
+      background-color: #00B4CB;
       height: 50vh; } }
   .home3 .videoExplainer {
     width: 788px;
@@ -947,12 +954,17 @@ body {
   text-align: center; }
   @media screen and (max-width: 665px) {
     .home4 {
-      display: none; } }
+      height: auto;
+      margin-top: 10px;
+      margin-bottom: 20px; } }
   .home4 .homeTitle4 {
     display: inline-block;
     position: relative;
     font-family: "Open Sans", sans-serif;
     width: 100%; }
+    @media screen and (max-width: 665px) {
+      .home4 .homeTitle4 {
+        margin-bottom: 30px; } }
     .home4 .homeTitle4 p {
       display: inline-block;
       font-size: 29px;
@@ -971,6 +983,9 @@ body {
     margin-bottom: 80px;
     width: 100%;
     vertical-align: middle; }
+    @media screen and (max-width: 665px) {
+      .home4 .works4 {
+        display: none; } }
     .home4 .works4 .woodQuote {
       margin-right: 100px; }
     .home4 .works4 .thermometerQuote {

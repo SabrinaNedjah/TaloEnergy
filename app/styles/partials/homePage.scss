@@ -284,26 +284,27 @@ body {
     }
   }
   .slider {
-    @media screen and (max-width: $break-small) {
-      display: none;
-    }
-      .center-slide{
-        width: 568px;
-
-
+    font-family: $openSans;
       .imgSlide{
         position: relative;
         text-align: center;
         display: inline-block;
-        height: 270px;
         background-image : url("../../images/clientTalo.png");
         background-size: cover;
+        height: 190px;
+        max-height: 100%;
         color: $white;
-        font-size: 21px;
+        box-shadow: 0px 4px 0px 0px $grey;
+        font-size: 17px;
         p{
-
+          display: inline-block;
+          width: 80%;
+          margin-top: 70px;
         }
         span{
+          display: inline-block;
+          width: 100%;
+          text-align: center;
           em{
             color: $blue;
           }
@@ -312,10 +313,12 @@ body {
       .imgCaption{
         display: inline-block;
         background-color: $white;
+        p{
+
+        }
       }
     }
-  }
-};
+  };
 
 .wave2 {
   display: inline-block;
@@ -336,7 +339,7 @@ body {
   height: 100vh;
   text-align: center;
   @media screen and (max-width: $break-small) {
-    background-color: red;
+    background-color: $blue;
     height: 50vh;
   }
   .videoExplainer{
@@ -382,13 +385,18 @@ body {
   height: 70vh;
   text-align: center;
   @media screen and (max-width: $break-small) {
-    display: none;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
   .homeTitle4 {
     display: inline-block;
     position: relative;
     font-family: $openSans;
     width: 100%;
+    @media screen and (max-width: $break-small) {
+      margin-bottom: 30px;
+    }
     p {
       display: inline-block;
       font-size: 29px;
@@ -405,6 +413,9 @@ body {
     }
   }
   .works4 {
+    @media screen and (max-width: $break-small) {
+      display: none;
+    }
     display: inline-block;
     margin-top: 60px;
     margin-bottom: 80px;

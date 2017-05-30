@@ -46,11 +46,13 @@ require("partials/_nav.php");
        <div class="center-slide">
          <div class="imgSlide">
            <p>« Nous avons pu améliorer le confort de notre habitat » </p>
-           <span>Pauline <em>& </em>Romain Cergy</span>
+           <span>Pauline <em>& </em>Romain</span>
+           <span>Cergy</span>
          </div>
          <div class="imgCaption">
            <p>Courants d’air, perte de chaleur, bruits, humidité… Beaucoup de logements sont mal isolés. Éco-rénover votre logement et installer des équipements plus performants (une chaudière à condensation, une pompe à chaleur, des fenêtres mieux isolées…), c’est gagner en confort de vie.
            </p>
+           <img src="" alt="">
         </div>
        </div>
 
@@ -87,7 +89,7 @@ require("partials/_nav.php");
           <p>Courants d’air, perte de chaleur, bruits, humidité… Beaucoup de logements sont mal isolés. Éco-rénover votre logement et installer des équipements plus performants (une chaudière à condensation, une pompe à chaleur, des fenêtres mieux isolées…), c’est gagner en confort de vie.
           </p>
         </div>
-     </div>
+      </div>
    </div>
 
    <div class="homeTitle3">
