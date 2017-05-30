@@ -42,44 +42,54 @@ require("partials/_nav.php");
      <span>02</span>
      <p>Pourquoi nos clients ont-ils éco-rénové leur habitat ?</p>
    </div>
-     <div class="center">
-     	<div class="center-slide">
-        <div class="blocsHome1 smartHome">
-       <div class="roundH1"><img src="" alt=""></div>
-       <h1>Smart Home</h1>
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni inventore cumque cum dicta maiores consequuntur quibusdam esse quasi doloribus, soluta illum eos, velit dolorem nihil
-       </p>
-     </div>
-     	</div>
-
-     	<div class="center-slide">
-        <div class="blocsHome1 smartHome">
-       <div class="roundH1"><img src="" alt=""></div>
-       <h1>Smart Home</h1>
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni inventore cumque cum dicta maiores consequuntur quibusdam esse quasi doloribus, soluta illum eos, velit dolorem nihil
-       </p>
-     </div>
-     	</div>
-     	<div class="center-slide">
-        <div class="blocsHome1 smartHome">
-       <div class="roundH1"><img src="" alt=""></div>
-       <h1>Smart Home</h1>
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni inventore cumque cum dicta maiores consequuntur quibusdam esse quasi doloribus, soluta illum eos, velit dolorem nihil
-       </p>
-     </div>
-     	</div>
-
-     	<div class="center-slide">
-        <div class="blocsHome1 smartHome">
-         <div class="roundH1"><img src="" alt=""></div>
-         <h1>Smart Home</h1>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni inventore cumque cum dicta maiores consequuntur quibusdam esse quasi doloribus, soluta illum eos, velit dolorem nihil
-         </p>
+     <div class="center slider">
+       <div class="center-slide">
+         <div class="imgSlide">
+           <p>« Nous avons pu améliorer le confort de notre habitat » </p>
+           <span>Pauline <em>& </em>Romain Cergy</span>
+         </div>
+         <div class="imgCaption">
+           <p>Courants d’air, perte de chaleur, bruits, humidité… Beaucoup de logements sont mal isolés. Éco-rénover votre logement et installer des équipements plus performants (une chaudière à condensation, une pompe à chaleur, des fenêtres mieux isolées…), c’est gagner en confort de vie.
+           </p>
+        </div>
        </div>
-     	</div>
-     </div>
 
-</div>
+     	<div class="center-slide">
+        <div class="imgSlide">
+          <p>« Nous avons pu améliorer le confort de notre habitat » </p>
+          <span>Pauline <em>& </em>Romain </span>
+          <span>Cergy</span>
+       </div>
+       <div class="imgCaption">
+          <p>Courants d’air, perte de chaleur, bruits, humidité… Beaucoup de logements sont mal isolés. Éco-rénover votre logement et installer des équipements plus performants (une chaudière à condensation, une pompe à chaleur, des fenêtres mieux isolées…), c’est gagner en confort de vie.
+          </p>
+        </div>
+     	</div>
+     	<div class="center-slide">
+        <div class="imgSlide">
+          <p>« Nous avons pu améliorer le confort de notre habitat » </p>
+          <span>Pauline <em>& </em>Romain </span>
+          <span>Cergy</span>
+        </div>
+        <div class="imgCaption">
+          <p>Courants d’air, perte de chaleur, bruits, humidité… Beaucoup de logements sont mal isolés. Éco-rénover votre logement et installer des équipements plus performants (une chaudière à condensation, une pompe à chaleur, des fenêtres mieux isolées…), c’est gagner en confort de vie.
+          </p>
+        </div>
+     	</div>
+
+     	<div class="center-slide">
+        <div class="imgSlide">
+          <p>« Nous avons pu améliorer le confort de notre habitat » </p>
+          <span>Pauline <em>& </em>Romain </span>
+          <span>Cergy</span>
+        </div>
+        <div class="imgCaption">
+          <p>Courants d’air, perte de chaleur, bruits, humidité… Beaucoup de logements sont mal isolés. Éco-rénover votre logement et installer des équipements plus performants (une chaudière à condensation, une pompe à chaleur, des fenêtres mieux isolées…), c’est gagner en confort de vie.
+          </p>
+        </div>
+     </div>
+   </div>
+
    <div class="homeTitle3">
      <span>03</span>
      <p>TALO Energy, comment ça fonctionne ?</p>
@@ -89,7 +99,7 @@ require("partials/_nav.php");
  <div class="wave2"></div>
 
  <section class="home3">
-<iframe class="videoExplainer" src="https://www.youtube.com/embed/ncld2tX4IhQ?rel=0&amp;showinfo=0" frameborder=" 0 " allowfullscreen></iframe> 
+<iframe class="videoExplainer" src="https://www.youtube.com/embed/ncld2tX4IhQ?rel=0&amp;showinfo=0" frameborder=" 0 " allowfullscreen></iframe>
 
 
 
