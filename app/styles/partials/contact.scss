@@ -1,0 +1,129 @@
+.DivBlue {
+  display: inline-block;
+  width: 100%;
+  height: 90vh;
+  background-color: $blue;
+  position: relative;
+  text-align: center;
+
+  }
+
+  .contactTitle {
+    display: inline-block;
+    position: relative;
+    font-family: $openSans;
+    width: 100%;
+    p {
+      font-size: 29px;
+      color: $white;
+      @media screen and (max-width: $break-small) {
+      font-size: 20px;
+      color: $white;
+      }
+    }
+
+    span {
+      display: inline-block;
+      position: absolute;
+      top: 95px;
+      left: 190px;
+      font-size: 80px;
+      color: $blue;
+      opacity: 0.10;
+      margin-left: 1vh;
+      color: $white;
+      @media screen and (max-width: $break-small) {
+        font-size: 50px;
+        top: -30px;
+        left: -30px;
+        color: $white;
+      }
+    }
+  };
+
+.contactContener {
+  margin-top: 60px;
+  height: 70vh;
+  text-align: center;
+  @media screen and (max-width: $break-small) {
+    display: none;
+  }
+  .contactTitle2 {
+    display: inline-block;
+    position: relative;
+    font-family: $openSans;
+    width: 100%;
+    p {
+      font-size: 29px;
+      @media screen and (max-width: $break-small) {
+      font-size: 20px;
+      }
+    }
+
+    span {
+      display: inline-block;
+      position: absolute;
+      top: -45px;
+      left: 190px;
+      font-size: 80px;
+      color: $blue;
+      opacity: 0.14;
+      margin-left: 10vh;
+      @media screen and (max-width: $break-small) {
+        font-size: 50px;
+        top: -30px;
+        left: -30px;
+      }
+    }
+  }
+  .social {
+    display: inline-block;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    width: 100%;
+    vertical-align: middle;
+    .twitter{
+      margin-right: 0px;
+    }
+    .facebook{
+      margin-left: 0px;
+    }
+    div {
+      display: inline-block;
+      text-align: center;
+      max-width: 110px;
+      max-height: 85px;
+    }
+    span {
+      display: inline-block;
+      margin-top: 25px;
+      width: 100%;
+      font-size: 20px;
+      color: $black;
+    }
+  }
+  a{
+    display: inline-block;
+    padding: 0px 40px 5px 40px;
+    box-shadow: 0 3px 1px 3px $grey;
+    background-color: $grey;
+    font-style: 28px;
+    color: $blue;
+    text-decoration: none;
+    transition-duration: 0.5s;
+  }
+  a:hover{
+    background-color: $blue;
+    color: $white;
+    transition-duration: 0.5s;
+  }
+};
+
+
+
+.formulaire{
+    margin-left:100px;
+    padding:20px;
+    float: left;
+    width: 290px;
+}
