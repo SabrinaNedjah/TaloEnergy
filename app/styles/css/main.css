@@ -657,12 +657,30 @@ body {
     margin-right: 60px; }
   .hamburgerHeader .hamburgerNav {
     display: none;
+    text-align: center;
     height: 100vh;
     width: 100%;
     background-color: #F6F6F6;
     color: #00B4CB;
     position: relative;
     z-index: 1000; }
+    .hamburgerHeader .hamburgerNav span {
+      display: inline-block;
+      text-decoration: none;
+      width: 100%;
+      color: #00B4CB;
+      font-size: 31px;
+      margin-top: 32px;
+      transition-duration: 0.3s; }
+    .hamburgerHeader .hamburgerNav span:hover {
+      color: #434343;
+      transition-duration: 0.3s; }
+    .hamburgerHeader .hamburgerNav img {
+      margin-top: 30px;
+      transition-duration: 1.5s; }
+    .hamburgerHeader .hamburgerNav img:hover {
+      width: 30%;
+      transition-duration: 1.5s; }
   .hamburgerHeader .titleHeader {
     display: inline-block;
     font-size: 21px; }
@@ -852,7 +870,8 @@ body {
       .home2 .homeTitle3 {
         width: 100%;
         padding-left: 5vh;
-        margin-top: 0; } }
+        margin-top: 20px;
+        margin-bottom: 10px; } }
     .home2 .homeTitle3 p {
       font-size: 29px; }
     .home2 .homeTitle3 span {
@@ -876,7 +895,7 @@ body {
       display: inline-block;
       background-image: url("../../images/clientTalo.png");
       background-size: cover;
-      height: 190px;
+      height: 180px;
       max-height: 100%;
       color: #F6F6F6;
       box-shadow: 0px 4px 0px 0px #EBEBEB;
@@ -884,7 +903,7 @@ body {
       .home2 .slider .imgSlide p {
         display: inline-block;
         width: 80%;
-        margin-top: 70px; }
+        margin-top: 55px; }
       .home2 .slider .imgSlide span {
         display: inline-block;
         width: 100%;
@@ -894,6 +913,10 @@ body {
     .home2 .slider .imgCaption {
       display: inline-block;
       background-color: #F6F6F6; }
+      .home2 .slider .imgCaption p {
+        width: 90%;
+        padding-left: 10%;
+        margin-top: 20px; }
 
 .wave2 {
   display: inline-block;
@@ -915,7 +938,7 @@ body {
   @media screen and (max-width: 665px) {
     .home3 {
       background-color: #00B4CB;
-      height: 50vh; } }
+      height: 45vh; } }
   .home3 .videoExplainer {
     width: 788px;
     height: 400px;
@@ -955,7 +978,7 @@ body {
   @media screen and (max-width: 665px) {
     .home4 {
       height: auto;
-      margin-top: 10px;
+      margin-top: 0px;
       margin-bottom: 20px; } }
   .home4 .homeTitle4 {
     display: inline-block;

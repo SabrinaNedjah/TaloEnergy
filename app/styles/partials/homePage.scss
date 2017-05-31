@@ -37,12 +37,34 @@ body {
   }
   .hamburgerNav{
     display: none;
+    text-align: center;
     height: 100vh;
     width: 100%;
     background-color: $white;
     color: $blue;
     position: relative;
     z-index: 1000;
+    span{
+      display: inline-block;
+      text-decoration: none;
+      width: 100%;
+      color : $blue;
+      font-size: 31px;
+      margin-top: 32px;
+      transition-duration: 0.3s;
+    }
+    span:hover{
+      color : $darkgrey;
+      transition-duration: 0.3s;
+    }
+    img{
+      margin-top: 30px;
+      transition-duration: 1.5s;
+    }
+    img:hover{
+      width: 30%;
+      transition-duration: 1.5s;
+    }
   }
   .titleHeader{
     display: inline-block;
@@ -263,7 +285,8 @@ body {
     @media screen and (max-width: $break-small) {
       width: 100%;
       padding-left: 5vh;
-      margin-top: 0;
+      margin-top: 20px;
+      margin-bottom: 10px;
     }
     p {
       font-size: 29px;
@@ -291,7 +314,7 @@ body {
         display: inline-block;
         background-image : url("../../images/clientTalo.png");
         background-size: cover;
-        height: 190px;
+        height: 180px;
         max-height: 100%;
         color: $white;
         box-shadow: 0px 4px 0px 0px $grey;
@@ -299,7 +322,7 @@ body {
         p{
           display: inline-block;
           width: 80%;
-          margin-top: 70px;
+          margin-top: 55px;
         }
         span{
           display: inline-block;
@@ -314,7 +337,9 @@ body {
         display: inline-block;
         background-color: $white;
         p{
-
+          width: 90%;
+          padding-left: 10%;
+          margin-top: 20px;
         }
       }
     }
@@ -340,7 +365,7 @@ body {
   text-align: center;
   @media screen and (max-width: $break-small) {
     background-color: $blue;
-    height: 50vh;
+    height: 45vh;
   }
   .videoExplainer{
     width: 788px;
@@ -386,7 +411,7 @@ body {
   text-align: center;
   @media screen and (max-width: $break-small) {
     height: auto;
-    margin-top: 10px;
+    margin-top: 0px;
     margin-bottom: 20px;
   }
   .homeTitle4 {
