@@ -3,22 +3,33 @@ $(document).ready(function() {
 		centerMode: true,
 		centerPadding: '0px',
 		slidesToShow: 3,
+		infinite : true,
+		dots : true,
+		autoplay : true,
+		autoplaySpeed: 1500,
 		responsive: [
 			{
 				breakpoint: 768,
 				settings: {
 					arrows: true,
+					dots : true,
+					infinite : true,
+					autoplay : true,
+					autoplaySpeed: 1500,
 					centerMode: true,
-					centerPadding: '00px',
+					centerPadding: '40px',
 					slidesToShow: 1
 				}
 			},
 			{
 				breakpoint: 375,
 				settings: {
-					arrows: true,
+					autoplay : true,
+					autoplaySpeed: 1500,
+					infinite : true,
 					centerMode: true,
-					centerPadding: '0px',
+					dots : true,
+					centerPadding: '40px',
 					slidesToShow: 1
 				}
 			}
@@ -28,8 +39,10 @@ $(document).ready(function() {
 	$('.one-time').slick({
 		dots: true,
 		infinite: true,
-		speed: 300,
+		speed: 500,
 		slidesToShow: 1,
+		autoplay : true,
+		autoplaySpeed: 2000,
 		adaptiveHeight: true,
 		responsive: [
 			{
@@ -37,7 +50,9 @@ $(document).ready(function() {
 				settings: {
 					dots: true,
 					infinite: true,
-					speed: 300,
+					autoplay : true,
+					autoplaySpeed: 2000,
+					speed: 500,
 					slidesToShow: 1,
 					adaptiveHeight: true
 				}
@@ -47,7 +62,9 @@ $(document).ready(function() {
 				settings: {
 					dots: true,
 					infinite: true,
-					speed: 300,
+					autoplay : true,
+					autoplaySpeed: 2000,
+					speed: 500,
 					slidesToShow: 1,
 					adaptiveHeight: true
 				}
@@ -72,3 +89,10 @@ $(document).ready(function() {
 		false
 	);
 });
+
+window.sr = ScrollReveal({
+delay: 250, duration : 700 });
+window.sr = ScrollReveal();
+sr.reveal('.home1');
+sr.reveal('.home2');
+sr.reveal('.home4');

@@ -6,13 +6,15 @@
   </button>
   <span class="titleHeader"> <strong>TALO</strong> ENERGY</span>
   <div class="hamburgerNav">
-    <a href="#"><span>ACCUEIL</span></a>
-    <a href="#"><span>L'ESPRIT TALO</span></a>
-    <a href="#"><span>CONTACT</span></a>
-    <a href="#"><span>ESPACE PRO</span></a>
-    <a href="#"><img src="images/facebook.png" alt="favicon facebook"></a>
-    <a href="#"><img src="images/twitter.png" alt="favicon twitter"></a>
-    <a href="#"><img src="images/instagram.png" alt="favicon instagram"></a>
+    <div class="hamburgerNavContent">
+      <a href="#"><span>ACCUEIL</span></a>
+      <a href="#"><span>L'ESPRIT TALO</span></a>
+      <a href="#"><span>CONTACT</span></a>
+      <a href="#"><span>ESPACE PRO</span></a>
+      <a href="#"><img src="images/facebook.png" alt="favicon facebook"></a>
+      <a href="#"><img src="images/twitter.png" alt="favicon twitter"></a>
+      <a href="#"><img src="images/instagram.png" alt="favicon instagram"></a>
+    </div>
   </div>
 </header>
 
