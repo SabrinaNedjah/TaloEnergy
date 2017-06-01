@@ -66,7 +66,6 @@ require("partials/_nav.php");
  <p class="contactTalo">01 02 03 04 05</p>
  </section>
 
-
 <?php
 require_once('phpmailer/PHPMailerAutoload.php');
 
@@ -112,7 +111,6 @@ if (isset($_POST['submit'])) {
     echo "<script>alert(\"Votre message a bien été envoyé !\")</script>";
   }
 }
-
 ?>
  <?php require("partials/_footer.php");
  ?>
