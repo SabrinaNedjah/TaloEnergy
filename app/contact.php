@@ -25,12 +25,12 @@ require("partials/_nav.php");
   		</div>
   	</div>
   	<div class="form-group">
-  		<div class="col-lg col-sm-12">
+  		<div class="col-md-12 col-sm-12">
   			<textarea class="form-control message" rows="4" name="message"></textarea>
   		</div>
   	</div>
     <div class="form-group">
-    		<div class="col-sm-10 col-sm-offset-1">
+    		<div class="col-sm-offset-1">
     			<input id="submit" name="submit" type="submit" value="Envoyez" class="btn btn-primary">
     		</div>
     	</div>

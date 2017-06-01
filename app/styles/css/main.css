@@ -1120,9 +1120,14 @@ body {
           color: #F6F6F6; } }
   .DivBlue .formulaire {
     float: left;
-    width: 35%;
+    width: 40%;
     font-family: "Open Sans", sans-serif;
-    margin-top: 50px; }
+    margin-top: 50px;
+    margin-left: 120px; }
+    @media screen and (max-width: 665px) {
+      .DivBlue .formulaire {
+        width: 80%;
+        margin-left: 50px; } }
     .DivBlue .formulaire .message {
       margin: 0 -1px 0 0;
       height: 195px; }
@@ -1150,13 +1155,14 @@ body {
       float: left; }
   .DivBlue .map {
     display: inline-block;
-    width: 60%;
+    width: 40%;
     height: 400px;
-    margin-top: 60px; }
+    margin-top: 50px; }
     @media screen and (max-width: 665px) {
       .DivBlue .map {
         width: 100%;
-        height: 40vh; } }
+        height: 40vh;
+        margin-top: 70px; } }
 
 .contactContener {
   margin-top: 60px;
