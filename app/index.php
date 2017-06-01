@@ -103,11 +103,6 @@ require("partials/_nav.php");
  <section class="home3">
 <iframe class="videoExplainer" src="https://www.youtube.com/embed/ncld2tX4IhQ?rel=0&amp;showinfo=0" frameborder=" 0 " allowfullscreen></iframe>
 
-
-
-
-
-
 <div class="one-time">
   <div class=one-time-slide><div class="priceQuote">
     <img src="images/price.png " class="img-responsive priceIcon " alt="icone de l 'euro">
