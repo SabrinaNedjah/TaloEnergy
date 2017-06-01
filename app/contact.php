@@ -25,20 +25,22 @@ require("partials/_nav.php");
   		</div>
   	</div>
   	<div class="form-group">
-  		<div class="col-lg">
+  		<div class="col-lg col-sm-12">
   			<textarea class="form-control message" rows="4" name="message"></textarea>
   		</div>
   	</div>
     <div class="form-group">
-    		<div class="col-sm-10 col-sm-offset-2">
+    		<div class="col-sm-10 col-sm-offset-1">
     			<input id="submit" name="submit" type="submit" value="Envoyez" class="btn btn-primary">
     		</div>
     	</div>
       </form>
 </section>
-<section class="map"></section>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.3335834604204!2d2.2768014151249574!3d48.87091700777946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66ff63ad6c7d7%3A0x475eed39821352be!2s7+Place+du+Chancelier+Adenauer%2C+75116+Paris!5e0!3m2!1sfr!2sfr!4v1496308523251" margin="90px" width="500" height="320" frameborder="0" style="border:0" allowfullscreen></iframe>
+<section class="map">
+
+<iframe class="mapIframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.3335834604204!2d2.2768014151249574!3d48.87091700777946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66ff63ad6c7d7%3A0x475eed39821352be!2s7+Place+du+Chancelier+Adenauer%2C+75116+Paris!5e0!3m2!1sfr!2sfr!4v1496308523251" frameborder ="0" margin= "0 auto" width="70%" height="320" style="border:0" allowfullscreen></iframe>
  </section>
+</section>
 
  <div class="wave"></div>
  <section class="contactContener">

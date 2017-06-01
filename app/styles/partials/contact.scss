@@ -6,25 +6,25 @@
   position: relative;
   text-align: center;
 
-
   .contactTitle {
     display: inline-block;
     position: relative;
     font-family: $openSans;
     width: 100%;
+
     p {
       font-size: 29px;
       color: $white;
       @media screen and (max-width: $break-small) {
-      font-size: 20px;
-      color: $white;
+        font-size: 20px;
+        color: $white;
       }
     }
 
     span {
       display: inline-block;
       position: absolute;
-      top: 0px;
+      top: 0;
       left: 190px;
       font-size: 80px;
       color: $blue;
@@ -39,50 +39,60 @@
       }
     }
   }
-  .formulaire{
-    float:left;
-   width:40%;
-   font-family: $openSans;
-   margin-top: 50px;
-   .message{
-     margin: 0px -1px 0px 0px;
-     height: 195px;
-   }
-   .btn {
-  -webkit-border-radius: 6;
-  -moz-border-radius: 6;
-  border-radius: 6px;
-  text-shadow: 0px 2px 14px #cfc4cf;
-  font-family: Arial;
-  color: $blue;
-  font-size: 20px;
-  background:#F6F6F6;
-  padding: 11px 20px 10px 20px;
-  text-decoration: none;
-  margin-left: 0px;
-}
 
-.btn:hover {
-  text-decoration: none;
-  background: #00B4CB;
-  color:$white;
-}
-.nom {
-  max-width: 100%;
+  .formulaire {
     float: left;
-  }
-  .prenom {
-    max-width: 100%;
-float: right;
-  }
-  }
-  .map{
-    width: 50%;
-    display: inline-block;
-    position: relative;
+    width: 35%;
     font-family: $openSans;
     margin-top: 50px;
+
+
+    .message {
+      margin: 0 -1px 0 0;
+      height: 195px;
+    }
+
+    .btn {
+      -webkit-border-radius: 6;
+      -moz-border-radius: 6;
+      border-radius: 6px;
+      text-shadow: 0 2px 14px #cfc4cf;
+      font-family: Arial;
+      color: $blue;
+      font-size: 20px;
+      background: #F6F6F6;
+      padding: 11px 20px 10px;
+      text-decoration: none;
+      margin-left: 0;
+    }
+
+    .btn:hover {
+      text-decoration: none;
+      background: #00B4CB;
+      color: $white;
+    }
+
+    .nom {
+      max-width: 100%;
+      float: left;
+    }
+
+    .prenom {
+      max-width: 100%;
+      float: left;
+    }
   }
+
+  .map{
+    display: inline-block;
+      width: 60%;
+      height: 400px;
+      margin-top : 60px;
+      @media screen and (max-width: $break-small) {
+        width: 100%;
+        height: 40vh;
+      }
+    }
 };
 
 .contactContener {
@@ -92,15 +102,17 @@ float: right;
   @media screen and (max-width: $break-small) {
     display: none;
   }
+
   .contactTitle2 {
     display: inline-block;
     position: relative;
     font-family: $openSans;
     width: 100%;
+
     p {
       font-size: 29px;
       @media screen and (max-width: $break-small) {
-      font-size: 20px;
+        font-size: 20px;
       }
     }
 
@@ -120,24 +132,29 @@ float: right;
       }
     }
   }
+
   .social {
     display: inline-block;
     margin-top: 60px;
     margin-bottom: 40px;
     width: 100%;
     vertical-align: middle;
-    .twitter{
-      margin-right: 0px;
+
+    .twitter {
+      margin-right: 0;
     }
-    .facebook{
-      margin-left: 0px;
+
+    .facebook {
+      margin-left: 0;
     }
+
     div {
       display: inline-block;
       text-align: center;
       max-width: 110px;
       max-height: 85px;
     }
+
     span {
       display: inline-block;
       margin-top: 25px;
@@ -146,9 +163,10 @@ float: right;
       color: $black;
     }
   }
-  a{
+
+  a {
     display: inline-block;
-    padding: 0px 40px 5px 40px;
+    padding: 0 40px 5px;
     box-shadow: 0 3px 1px 3px $grey;
     background-color: $grey;
     font-style: 28px;
@@ -156,16 +174,19 @@ float: right;
     text-decoration: none;
     transition-duration: 0.5s;
   }
-  a:hover{
+
+  a:hover {
     background-color: $blue;
     color: $white;
     transition-duration: 0.5s;
   }
-.contactTalo{
-  color:$blue;
-  font-size: 20px;
-}
-p{
-  font-size: 20px;
-}
+
+  .contactTalo {
+    color: $blue;
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 20px;
+  }
 };
