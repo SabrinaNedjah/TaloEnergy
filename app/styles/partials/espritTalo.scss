@@ -3,21 +3,29 @@
   height: 200px;
   max-width: 200px;
   margin: 0 auto;
+  @media screen and (max-width: $break-medium) {
+  display: none;
+  }
+  @media screen and (max-width: $break-small) {
+  display: none;
+  }
 }
 
 .DivBlueET {
   width: 100%;
-  height: 200vh;
+  height: auto;
   background-color: $blue;
   text-align: center;
   font-family: sans-serif;
   .textIntro {
-    font-size: 15px;
+    font-size: 18px;
     color: $white;
-    margin: 20px 100px 70px 100px;
+    margin: 40px 100px 70px 100px;
     @media screen and (max-width: $break-small) {
-      font-size: 20px;
+      font-size: 15px;
       color: $white;
+      margin: 0 auto;
+      width: 80%;
     }
   }
   .taloTitle {
@@ -29,6 +37,11 @@
     text-align: left;
     padding-left: 120px;
     padding-top: 50px;
+    @media screen and (max-width: $break-small) {
+      width: 70%;
+      margin-top: 22%;
+      padding: 0;
+    }
     p {
       font-size: 29px;
       color: $white;
@@ -54,7 +67,8 @@
     }
   }
   .taloTitle2 {
-    margin-top: 100px;
+    margin-top: 40px;
+    padding-bottom: 90px;
     display: inline-block;
     position: relative;
     font-family: $openSans;
@@ -63,11 +77,17 @@
     text-align: left;
     padding-left: 120px;
     padding-top: 50px;
+    @media screen and (max-width: $break-small) {
+    padding: 0;
+    width: 80%;
+    height: 70px;
+    margin-top: 10%;
+    }
     p {
       font-size: 29px;
       color: $white;
       @media screen and (max-width: $break-small) {
-        font-size: 20px;
+        font-size: 16px;
         color: $white;
       }
     }
@@ -80,9 +100,9 @@
       opacity: 0.20;
       color: $white;
       @media screen and (max-width: $break-small) {
-        font-size: 50px;
-        top: -30px;
-        left: -30px;
+        font-size: 40px;
+        top: -20px;
+        left: -10px;
         color: $white;
       }
     }
@@ -90,11 +110,24 @@
   .graphique {
     width: 950px;
     margin: auto;
+    @media screen and (max-width: $break-medium) {
+      display: inline-block;
+      width: 100%;
+    }
+    @media screen and (max-width: $break-small) {
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+    }
     .line1 {
       width: 100%;
       height: 100px;
       margin: 0 auto;
       padding: 0;
+      @media screen and (max-width: $break-small) {
+      width: auto;
+      height: auto;
+      }
       .main {
         width: calc(45% - 20px);
         height: 400px;
@@ -102,25 +135,58 @@
         background: $white;
         margin-right: 20px;
         box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.20);
+        @media screen and (max-width: $break-medium) {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        }
+        @media screen and (max-width: $break-small) {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        }
         p {
           color: #5D5D5D;
           margin: 20px 50px;
           font-size: 22px;
+          @media screen and (max-width: $break-small) {
+          margin: 3px;
+          }
         }
       }
       .two-verticals {
         width: 55%;
         float: left;
+        @media screen and (max-width: $break-medium) {
+        width: auto;
+        height: auto;
+        }
+        @media screen and (max-width: $break-small) {
+          width: auto;
+          height: auto;
+        }
         >div {
           background-color: $white;
           width: 100%;
           height: 190px;
           margin-bottom: 20px;
           box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.20);
+          @media screen and (max-width: $break-medium) {
+            height: auto;
+          }
+          @media screen and (max-width: $break-small) {
+            height: auto;
+          }
           #charts2 {
             float: left;
             width: 180px;
             height: 180px;
+            @media screen and (max-width: $break-medium) {
+              display: none;
+            }
+            @media screen and (max-width: $break-small) {
+            display: none;
+            }
           }
           p {
             width: calc(100% - 180px);
@@ -128,6 +194,19 @@
             color: #5D5D5D;
             font-size: 22px;
             padding-top: 35px;
+            @media screen and (max-width: $break-medium) {
+              float: none;
+              width: 95%;
+              margin: 0 10px;
+              padding-top: 0;
+            }
+            @media screen and (max-width: $break-small) {
+            float: none;
+            width: 95%;
+            max-width: 95%;
+            margin: 0 10px;
+            padding-top: 0;
+            }
           }
           &:last-of-type {
             display: flex;
@@ -136,6 +215,9 @@
               width: 100%;
               text-align: center;
               padding: 0 55px;
+              @media screen and (max-width: $break-small) {
+              padding: 0;
+              }
             }
           }
         }
@@ -155,6 +237,17 @@
           margin: 0 10px;
           height: 350px;
           box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.20);
+          @media screen and (max-width: $break-medium) {
+          height: 170px;
+          padding: 2% 5px 0px 5px;
+          }
+          @media screen and (max-width: $break-small) {
+          width: 100%;
+          float: none;
+          height: auto;
+          margin: 0;
+          margin-bottom: 20px;
+          }
           #charts3,
           #charts4,
           #charts5 {
@@ -162,92 +255,193 @@
             height: 200px;
             max-width: 200px;
             margin: 0 auto;
+            @media screen and (max-width: $break-medium) {
+              display: none;
+            }
+            @media screen and (max-width: $break-small) {
+            display: none;
+            }
           }
           p {
             color: #5D5D5D;
             margin: 0px 0px;
             font-size: 22px;
+            @media screen and (max-width: $break-small) {
+            margin: 0 10px;
+            }
           }
           //la 1er div pour retirer le margin-left au debut
           &:first-of-type {
             width: calc(33.33% - 13px);
             margin-left: 0;
+            @media screen and (max-width: $break-small) {
+            width: 100%;
+            }
           }
           //la dernier div pour retirer le margin-left à la fin
           &:last-of-type {
             width: calc(33.33% - 13px);
             margin-right: 0;
+            @media screen and (max-width: $break-small) {
+            width: 100%;
+            }
             p {
               padding: 0 40px;
+              @media screen and (max-width: $break-medium) {
+              padding: 0;
+              margin: 0 auto;
+              }
+              @media screen and (max-width: $break-small) {
+              padding: 0;
+              margin: 0 auto;
+              }
             }
           }
         }
       }
     }
   }
+};
   .equipeTalo {
-    .equipe {
-      display: inline-block;
-      margin-bottom: 80px;
-      width: 100%;
-      vertical-align: middle;
-      .RaphaelNEVES {
-        display: inline-block;
-        text-align: center;
-        max-width: 110px;
-        max-height: 85px;
-      }
-      .KhalidCHAIB {
-        margin-right: 100px;
-      }
-      .AbdessamadIDZINA {
-        margin-left: 100px;
-      }
-      div {
-        display: inline-block;
-        text-align: center;
-        max-width: 110px;
-        max-height: 85px;
-      }
-      span {
-        display: inline-block;
-        margin-top: 25px;
-        width: 100%;
-        font-size: 20px;
-        color: $black;
-      }
-    }
-    .wave {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    .waveTeam {
       display: inline-block;
       margin: 0 auto;
       background-image: url("../../images/vague.png");
       background-position: bottom;
       background-repeat: no-repeat;
       width: 100%;
+      max-width: 100%;
       height: 100px;
-      position: absolute;
-      bottom: -870px;
-      left: 0;
-      text-align: center;
-      @media screen and (max-width: $break-small) {
-        display: none;
+      h2{
+        font-size: 20px;
+        margin: 10px auto 5px auto;
+        color: $black;
+        @media screen and (max-width: $break-medium) {
+          font-size: 18px;
+        }
+        @media screen and (max-width: $break-small) {
+          font-size: 16px;
+        }
       }
-      .roundPP {
+      h3{
+        margin: 0 auto 5px auto;
+        font-size: 15px;
+        color: $blue;
+      }
+      span{
+        font-size: 15px;
+        color: $black;
+      }
+      .blocKhalid{
         display: inline-block;
-        border-radius: 50%;
-        background-color: #F6F704;
-        width: 105px;
-        height: 105px;
-        top: 7px;
-        margin: -17px 40px;
+        text-align: center;
+        width: 20%;
+        height: auto;
+        @media screen and (max-width: $break-medium) {
+          margin: 0 20px;
+          width: 30%;
+        }
+        @media screen and (max-width: $break-small) {
+          margin: 0 20px;
+          width: 35%;
+        }
+        .roundPP {
+          display: inline-block;
+          border-radius: 50%;
+          background-color: #F6F704;
+          width: 105px;
+          height: 105px;
+        }
+        .socialRounds{
+          display: inline-block;
+          width: 100%;
+          margin-top: 5px;
+          img{
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+          }
+        }
+      }
+      .blocRaphael{
+        display: inline-block;
+        text-align: center;
+        width: 20%;
+        height: auto;
+        @media screen and (max-width: $break-medium) {
+          margin: 0 20px;
+          width: 30%;
+        }
+        @media screen and (max-width: $break-small) {
+          margin: 0 20px;
+          width: 35%;
+        }
+        .roundPP {
+          display: inline-block;
+          border-radius: 50%;
+          background-color: #F6F704;
+          width: 105px;
+          height: 105px;
+        }
+        .socialRounds{
+          display: inline-block;
+          width: 100%;
+          margin-top: 5px;
+          img{
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+          }
+        }
+      }
+      .blocAbdes{
+        display: inline-block;
+        text-align: center;
+        width: 20%;
+        height: auto;
+        @media screen and (max-width: $break-medium) {
+          margin: 0 20px;
+          width: 30%;
+        }
+        @media screen and (max-width: $break-small) {
+          margin: 0 20px;
+          width: 35%;
+        }
+        .roundPP {
+          display: inline-block;
+          border-radius: 50%;
+          background-color: #F6F704;
+          width: 105px;
+          height: 105px;
+        }
+        .socialRounds{
+          display: inline-block;
+          width: 100%;
+          margin-top: 5px;
+          img{
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+          }
+        }
       }
     }
-  }
-  ;
-}
+  };
 
 .AccomClient {
-  height: 170vh;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  @media screen and (max-width: $break-small) {
+    height: auto;
+  }
   .taloTitle3 {
     display: inline-block;
     position: relative;
@@ -257,10 +451,19 @@
     text-align: left;
     padding-left: 120px;
     padding-top: 50px;
-    top: 300px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    @media screen and (max-width: $break-small) {
+      padding: 0;
+      margin-left: 10%;
+      margin-bottom: 0px;
+    }
     p {
       font-size: 29px;
       color: $black;
+      @media screen and (max-width: $break-small) {
+        font-size: 25px;
+      }
     }
     span {
       display: inline-block;
@@ -270,22 +473,41 @@
       color: $blue;
       opacity: 0.20;
       color: $blue;
+      @media screen and (max-width: $break-small) {
+        font-size: 40px;
+        top: -10px;
+      }
     }
   }
   .blueParagraphe {
     width: 140vh;
-    height: 120px;
+    height: auto;
     background-color: $blue;
     color: $white;
-    top: 360px;
     position: relative;
     left: 117px;
     margin-bottom: 10px;
     box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.20);
+    @media screen and (max-width: $break-medium) {
+      width: 100%;
+      padding: 10px;
+      height: auto;
+      left: 0;
+    }
+    @media screen and (max-width: $break-small) {
+      width: 100%;
+      padding: 10px;
+      height: auto;
+      left: 0;
+    }
     .parSection {
       font-family: sans-serif;
       font-size: 22px;
       padding: 20px 120px;
+      @media screen and (max-width: $break-small) {
+        padding: 0;
+        font-size: 16px;
+      }
     }
     .numeroSection {
       float: left;
@@ -295,6 +517,12 @@
       opacity: 0.20;
       color: $white;
       text-align: center;
+      @media screen and (max-width: $break-small) {
+        width: 70px;
+        float: none;
+        height: 100%;
+        font-size: 40px;
+      }
     }
   }
   .whiteParagraphe {
@@ -303,15 +531,30 @@
     background-color: $white;
     color: #5D5D5D;
     position: relative;
-    top: 360px;
     left: 117px;
     position: relative;
     margin-bottom: 10px;
     box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.20);
+    @media screen and (max-width: $break-medium) {
+      width: 100%;
+      padding: 10px;
+      height: auto;
+      left: 0;
+    }
+    @media screen and (max-width: $break-small) {
+      width: 100%;
+      padding: 10px;
+      height: auto;
+      left: 0;
+    }
     .parSection {
       font-family: sans-serif;
       font-size: 22px;
       padding: 20px 120px;
+      @media screen and (max-width: $break-small) {
+        padding: 0;
+        font-size: 16px;
+      }
     }
     .numeroSection {
       float: left;
@@ -321,6 +564,11 @@
       opacity: 0.20;
       color: $blue;
       text-align: center;
+      @media screen and (max-width: $break-small) {
+        height: 100%;
+        font-size: 40px;
+        float: none;
+      }
     }
   }
 }

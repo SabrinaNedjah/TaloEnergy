@@ -50,37 +50,50 @@ require("partials/_nav.php");
       </div>
     </div>
     <div class="clear"></div>
-  </section>
-
-  <section class="equipeTalo">
     <div class="taloTitle2">
       <span>TALO</span>
-      <p>Mais qui se cache derrière TALO Energy</p>
+      <p>Mais qui se cache derrière TALO Energy ?</p>
     </div>
-    <div class="wave">
-      <div class="roundPP"></div>
-      <div class="roundPP"></div>
-      <div class="roundPP"></div>
-      <div class="equipe">
-        <div class="RaphaelNEVES">
-          <span>Entretien</span>
-          <p>s</p>
-          <p>a</p>
+  </section>
+</section>
+
+  <section class="equipeTalo">
+    <div class="waveTeam">
+      <div class="blocKhalid">
+        <div class="roundPP"></div>
+        <h2> Khalid CHAIB</h2>
+        <h3>Co-fondateur</h3>
+        <span>Business et partenariat</span>
+        <div class="socialRounds">
+          <img src="images/facebook.png" alt="">
+          <img src="images/twitter.png" alt="">
+          <img src="images/instagram.png" alt="">
         </div>
-        <div class="KhalidCHAIB">
-          <span>ss</span>
-          <p>s</p>
-          <p>a</p>
+      </div>
+      <div class="blocRaphael">
+        <div class="roundPP"></div>
+        <h2> Raphaël NEVES</h2>
+        <h3>Co-fondateur</h3>
+        <span>Logistique et Technique</span>
+        <div class="socialRounds">
+          <img src="images/facebook.png" alt="">
+          <img src="images/twitter.png" alt="">
+          <img src="images/instagram.png" alt="">
         </div>
-        <div class="AbdessamadIDZINA">
-          <span>Chauffage</span>
-          <p>s</p>
-          <p>a</p>
+      </div>
+      <div class="blocAbdes">
+        <div class="roundPP"></div>
+        <h2> Abdessamad IDZINA</h2>
+        <h3>Co-fondateur</h3>
+        <span>Marketing et Digital</span>
+        <div class="socialRounds">
+          <img src="images/facebook.png" alt="">
+          <img src="images/twitter.png" alt="">
+          <img src="images/instagram.png" alt="">
         </div>
       </div>
     </div>
   </section>
-</section>
 
 
 <section class="AccomClient">
@@ -88,7 +101,7 @@ require("partials/_nav.php");
     <span>TALO</span>
     <p>L’accompagnement du client</p>
   </div>
-  
+
   <div class="blueParagraphe">
     <span class="numeroSection">#1</span>
     <p class="parSection">Chez TALO Energy, l’accompagnent du client est notre priorité. C’est pourquoi nous avons décidé de vous aider dans la configuration de votre produit en ligne avec l’appui d’un conseiller qualifié.
@@ -113,7 +126,7 @@ require("partials/_nav.php");
       Vos fenêtres vous sont livrées et un artisan de votre choix arrive chez vous pour procéder à la pose.
     </p>
   </div>
-  
+
   <div class="blueParagraphe">
     <span class="numeroSection">#5</span>
     <p class="parSection"> Et voilà, en deux temps trois mouvements, les fenêtres que vous avez choisies sont posées et améliorent le bilan énergétique de votre domicile !
