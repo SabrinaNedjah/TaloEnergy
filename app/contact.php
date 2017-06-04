@@ -2,6 +2,8 @@
 require("partials/_header.php");
 require("partials/_nav.php");
 ?>
+<!-- by Sabrina, responsive raphael -->
+
 <section class="DivBlue">
   <div class="contactTitle">
     <span>Contact</span>

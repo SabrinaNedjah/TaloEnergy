@@ -3,6 +3,8 @@ require("partials/_header.php");
 require("partials/_nav.php");
 ?>
 
+<!-- by Raphael, responsive raphael -->
+
 <section class="persAnimation">
   <img class="taloZen" src="images/character.svg" alt="dessin d'un conseiller de Talo Energy">
 </section>

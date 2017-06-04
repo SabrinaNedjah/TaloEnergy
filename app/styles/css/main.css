@@ -1780,3 +1780,276 @@ body {
           height: 100%;
           font-size: 40px;
           float: none; } }
+
+body {
+  color: #white; }
+
+.clearboth {
+  clear: both; }
+
+#joinTalo {
+  background: url("../../images/fondTravail.png") no-repeat center fixed;
+  background-size: cover;
+  height: 50vh;
+  position: relative; }
+  #joinTalo .backgroundOpacity {
+    background-color: rgba(0, 180, 203, 0.5);
+    height: 100%; }
+  #joinTalo .title {
+    margin-top: 10%;
+    color: white;
+    font-weight: bold; }
+    @media screen and (max-width: 1024px) {
+      #joinTalo .title {
+        margin-top: 20%; } }
+    @media screen and (max-width: 665px) {
+      #joinTalo .title {
+        margin-top: 25%; } }
+
+/*
+First part
+*/
+h2.underTitle {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  font-size: 2.500em; }
+
+.presentation {
+  height: auto; }
+  .presentation .casePart1 {
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background: #EBEBEB;
+    height: 370px; }
+    @media screen and (max-width: 1024px) {
+      .presentation .casePart1 {
+        height: auto;
+        padding: 10px;
+        margin: 10px auto 20px auto; } }
+    @media screen and (max-width: 665px) {
+      .presentation .casePart1 {
+        height: auto;
+        padding: 10px;
+        margin: 10px auto 20px auto; } }
+    .presentation .casePart1 .caseTitle {
+      color: #00B4CB;
+      font-size: 1.325em;
+      font-weight: bold; }
+    @media screen and (max-width: 665px) {
+      .presentation .casePart1 img {
+        display: none; } }
+    .presentation .casePart1 .caseText {
+      font-size: 1.250em; }
+
+/*
+Second part
+*/
+.titleConvo {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #00B4CB; }
+
+.convoRight {
+  color: #F6F6F6;
+  font-size: 16px; }
+  @media screen and (max-width: 1024px) {
+    .convoRight {
+      padding-left: 30px; } }
+  @media screen and (max-width: 665px) {
+    .convoRight {
+      padding-left: 30px; } }
+
+.convoLeft {
+  color: #171717;
+  font-size: 16px; }
+  @media screen and (max-width: 1024px) {
+    .convoLeft {
+      padding-left: 30px; } }
+  @media screen and (max-width: 665px) {
+    .convoLeft {
+      padding-left: 30px; } }
+
+.ballTalo {
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  background: #00B4CB;
+  margin: 0 auto;
+  position: absolute;
+  text-align: center;
+  padding-top: 5px;
+  left: -65px;
+  top: -55px; }
+  @media screen and (max-width: 1024px) {
+    .ballTalo {
+      right: -120%;
+      top: -50px; } }
+  @media screen and (max-width: 665px) {
+    .ballTalo {
+      right: -120%;
+      top: -50px; } }
+  .ballTalo .imageTaloBall {
+    width: 4.5em;
+    height: 4.5em;
+    margin-top: -1px;
+    margin-left: 1px; }
+
+.ballWorker {
+  width: 5.5em;
+  height: 5.5em;
+  border-radius: 50%;
+  background: #EBEBEB;
+  margin: 0 auto;
+  position: absolute;
+  text-align: center;
+  right: -50px;
+  top: -50px; }
+  .ballWorker .workerBall {
+    margin-top: 6px; }
+    @media screen and (max-width: 665px) {
+      .ballWorker .workerBall {
+        margin: 0; } }
+
+.ballRelative {
+  position: relative; }
+
+.msgLeftSide {
+  background: #EBEBEB;
+  padding: 20px;
+  border-radius: 3px; }
+
+.msgRightSide {
+  background: #00B4CB;
+  padding: 20px;
+  border-radius: 3px; }
+
+.msgRightSide, .msgLeftSide {
+  margin-bottom: 10px; }
+
+.secondTitle {
+  margin-bottom: 40px;
+  font-size: 18px; }
+
+.secondPart {
+  margin-bottom: 130px; }
+
+.ballSvg {
+  width: 6em;
+  height: 6em; }
+  @media screen and (max-width: 665px) {
+    .ballSvg {
+      display: none; } }
+
+/*
+Third part
+*/
+.blue {
+  background: #00B4CB;
+  margin-top: 50px;
+  color: #FFFFFF;
+  font-size: 1.25em; }
+  .blue .relProWhite {
+    position: relative;
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 100%; }
+    .blue .relProWhite .thirdTitle {
+      font-weight: bold;
+      font-size: 1.5em; }
+    .blue .relProWhite .proWhite {
+      position: absolute;
+      top: -14px;
+      left: -25.9em;
+      color: #F6F6F6;
+      opacity: 0.4;
+      font-size: 45px;
+      font-weight: bold; }
+      @media screen and (max-width: 665px) {
+        .blue .relProWhite .proWhite {
+          margin-left: 0;
+          margin-top: 0;
+          top: -30%;
+          left: 0; } }
+
+.thirdPart {
+  margin-top: 70px;
+  margin-bottom: 90px;
+  position: relative;
+  padding-bottom: 28px; }
+  @media screen and (max-width: 665px) {
+    .thirdPart {
+      margin-top: 20px; } }
+
+.firstMsg {
+  margin-top: 20px; }
+
+.thirdText {
+  margin-top: 20px; }
+
+/*
+Forth Part
+*/
+.icon {
+  margin-top: 20px; }
+
+.forthPart {
+  margin-bottom: 60px; }
+
+.proBase {
+  position: relative;
+  margin-left: 100px;
+  margin-bottom: 50px; }
+  @media screen and (max-width: 665px) {
+    .proBase {
+      margin-bottom: 30px;
+      margin-left: 20px; } }
+  .proBase .forthTitle {
+    font-weight: bold; }
+  .proBase .pro {
+    position: absolute;
+    top: -30px;
+    left: 0px;
+    color: #00B4CB;
+    opacity: 0.4;
+    font-size: 45px;
+    font-weight: bold; }
+
+.forthText {
+  margin-bottom: 20px;
+  font-size: 18px; }
+
+.textFifth {
+  margin-top: 10px; }
+
+.logoForth {
+  width: 100px;
+  height: 100px; }
+
+.sendButton {
+  margin-left: -55px;
+  padding-left: 24px;
+  padding-right: 24px; }
+
+/*
+Fifth part
+*/
+/*
+misc
+*/
+.shadow {
+  -webkit-box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.11);
+  -moz-box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.11); }
+
+.dispoBlock {
+  position: absolute;
+  background: #00B4CB;
+  height: 30px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  color: #F6F6F6;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px; }

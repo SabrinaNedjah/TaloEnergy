@@ -2,6 +2,7 @@
 require("partials/_header.php");
 require("partials/_nav.php");
 ?>
+<!-- by Sabrina, responsive raphael -->
 
 <section class="DivBlueET">
   <div class="taloTitle">
