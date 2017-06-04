@@ -4,11 +4,9 @@
   padding: $hamburger-padding-y $hamburger-padding-x;
   display: inline-block;
   cursor: pointer;
-
   transition-property: opacity, filter;
   transition-duration: $hamburger-hover-transition-duration;
   transition-timing-function: $hamburger-hover-transition-timing-function;
-
   // Normalize (<button>)
   font: inherit;
   color: inherit;
@@ -17,9 +15,8 @@
   border: 0;
   margin: 0;
   overflow: visible;
-
   &:hover {
-    @if $hamburger-hover-use-filter == true {
+    @if $hamburger-hover-use-filter==true {
       filter: $hamburger-hover-filter;
     }
     @else {
@@ -39,7 +36,6 @@
   display: block;
   top: 50%;
   margin-top: $hamburger-layer-height / -2;
-
   &,
   &::before,
   &::after {
@@ -52,17 +48,14 @@
     transition-duration: 0.15s;
     transition-timing-function: ease;
   }
-
   &::before,
   &::after {
     content: "";
     display: block;
   }
-
   &::before {
     top: ($hamburger-layer-spacing + $hamburger-layer-height) * -1;
   }
-
   &::after {
     bottom: ($hamburger-layer-spacing + $hamburger-layer-height) * -1;
   }

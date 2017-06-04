@@ -1,0 +1,326 @@
+#charts {
+  min-width: 110px;
+  height: 200px;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.DivBlueET {
+  width: 100%;
+  height: 200vh;
+  background-color: $blue;
+  text-align: center;
+  font-family: sans-serif;
+  .textIntro {
+    font-size: 15px;
+    color: $white;
+    margin: 20px 100px 70px 100px;
+    @media screen and (max-width: $break-small) {
+      font-size: 20px;
+      color: $white;
+    }
+  }
+  .taloTitle {
+    display: inline-block;
+    position: relative;
+    font-family: $openSans;
+    width: 100%;
+    height: 70px;
+    text-align: left;
+    padding-left: 120px;
+    padding-top: 50px;
+    p {
+      font-size: 29px;
+      color: $white;
+      @media screen and (max-width: $break-small) {
+        font-size: 20px;
+        color: $white;
+      }
+    }
+    span {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      font-size: 80px;
+      color: $blue;
+      opacity: 0.20;
+      color: $white;
+      @media screen and (max-width: $break-small) {
+        font-size: 50px;
+        top: -30px;
+        left: -30px;
+        color: $white;
+      }
+    }
+  }
+  .taloTitle2 {
+    margin-top: 100px;
+    display: inline-block;
+    position: relative;
+    font-family: $openSans;
+    width: 100%;
+    height: 70px;
+    text-align: left;
+    padding-left: 120px;
+    padding-top: 50px;
+    p {
+      font-size: 29px;
+      color: $white;
+      @media screen and (max-width: $break-small) {
+        font-size: 20px;
+        color: $white;
+      }
+    }
+    span {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      font-size: 80px;
+      color: $blue;
+      opacity: 0.20;
+      color: $white;
+      @media screen and (max-width: $break-small) {
+        font-size: 50px;
+        top: -30px;
+        left: -30px;
+        color: $white;
+      }
+    }
+  }
+  .graphique {
+    width: 950px;
+    margin: auto;
+    .line1 {
+      width: 100%;
+      height: 100px;
+      margin: 0 auto;
+      padding: 0;
+      .main {
+        width: calc(45% - 20px);
+        height: 400px;
+        float: left;
+        background: $white;
+        margin-right: 20px;
+        box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.20);
+        p {
+          color: #5D5D5D;
+          margin: 20px 50px;
+          font-size: 22px;
+        }
+      }
+      .two-verticals {
+        width: 55%;
+        float: left;
+        >div {
+          background-color: $white;
+          width: 100%;
+          height: 190px;
+          margin-bottom: 20px;
+          box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.20);
+          #charts2 {
+            float: left;
+            width: 180px;
+            height: 180px;
+          }
+          p {
+            width: calc(100% - 180px);
+            float: left;
+            color: #5D5D5D;
+            font-size: 22px;
+            padding-top: 35px;
+          }
+          &:last-of-type {
+            display: flex;
+            align-items: center;
+            p {
+              width: 100%;
+              text-align: center;
+              padding: 0 55px;
+            }
+          }
+        }
+      }
+      .clear {
+        clear: both;
+      }
+    }
+    .line2 {
+      width: 100%;
+      .three-horizontals {
+        >div {
+          // calcule dynamique
+          width: calc(33.33% - 14px);
+          float: left;
+          background: $white;
+          margin: 0 10px;
+          height: 350px;
+          box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.20);
+          #charts3,
+          #charts4,
+          #charts5 {
+            min-width: 110px;
+            height: 200px;
+            max-width: 200px;
+            margin: 0 auto;
+          }
+          p {
+            color: #5D5D5D;
+            margin: 0px 0px;
+            font-size: 22px;
+          }
+          //la 1er div pour retirer le margin-left au debut
+          &:first-of-type {
+            width: calc(33.33% - 13px);
+            margin-left: 0;
+          }
+          //la dernier div pour retirer le margin-left à la fin
+          &:last-of-type {
+            width: calc(33.33% - 13px);
+            margin-right: 0;
+            p {
+              padding: 0 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .equipeTalo {
+    .equipe {
+      display: inline-block;
+      margin-bottom: 80px;
+      width: 100%;
+      vertical-align: middle;
+      .RaphaelNEVES {
+        display: inline-block;
+        text-align: center;
+        max-width: 110px;
+        max-height: 85px;
+      }
+      .KhalidCHAIB {
+        margin-right: 100px;
+      }
+      .AbdessamadIDZINA {
+        margin-left: 100px;
+      }
+      div {
+        display: inline-block;
+        text-align: center;
+        max-width: 110px;
+        max-height: 85px;
+      }
+      span {
+        display: inline-block;
+        margin-top: 25px;
+        width: 100%;
+        font-size: 20px;
+        color: $black;
+      }
+    }
+    .wave {
+      display: inline-block;
+      margin: 0 auto;
+      background-image: url("../../images/vague.png");
+      background-position: bottom;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100px;
+      position: absolute;
+      bottom: -870px;
+      left: 0;
+      text-align: center;
+      @media screen and (max-width: $break-small) {
+        display: none;
+      }
+      .roundPP {
+        display: inline-block;
+        border-radius: 50%;
+        background-color: #F6F704;
+        width: 105px;
+        height: 105px;
+        top: 7px;
+        margin: -17px 40px;
+      }
+    }
+  }
+  ;
+}
+
+.AccomClient {
+  height: 170vh;
+  .taloTitle3 {
+    display: inline-block;
+    position: relative;
+    font-family: $openSans;
+    width: 100%;
+    height: 70px;
+    text-align: left;
+    padding-left: 120px;
+    padding-top: 50px;
+    top: 300px;
+    p {
+      font-size: 29px;
+      color: $black;
+    }
+    span {
+      display: inline-block;
+      position: absolute;
+      top: 0px;
+      font-size: 80px;
+      color: $blue;
+      opacity: 0.20;
+      color: $blue;
+    }
+  }
+  .blueParagraphe {
+    width: 140vh;
+    height: 120px;
+    background-color: $blue;
+    color: $white;
+    top: 360px;
+    position: relative;
+    left: 117px;
+    margin-bottom: 10px;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.20);
+    .parSection {
+      font-family: sans-serif;
+      font-size: 22px;
+      padding: 20px 120px;
+    }
+    .numeroSection {
+      float: left;
+      width: 130px;
+      height: 120px;
+      font-size: 84px;
+      opacity: 0.20;
+      color: $white;
+      text-align: center;
+    }
+  }
+  .whiteParagraphe {
+    width: 120vh;
+    height: 120px;
+    background-color: $white;
+    color: #5D5D5D;
+    position: relative;
+    top: 360px;
+    left: 117px;
+    position: relative;
+    margin-bottom: 10px;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.20);
+    .parSection {
+      font-family: sans-serif;
+      font-size: 22px;
+      padding: 20px 120px;
+    }
+    .numeroSection {
+      float: left;
+      width: 130px;
+      height: 120px;
+      font-size: 84px;
+      opacity: 0.20;
+      color: $blue;
+      text-align: center;
+    }
+  }
+}

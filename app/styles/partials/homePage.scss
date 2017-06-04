@@ -1,11 +1,10 @@
 @import "variables";
-
 .row.no-pad {
   margin-right: 0;
   margin-left: 0;
 }
 
-.row.no-pad > [class*='col-'] {
+.row.no-pad>[class*='col-'] {
   padding-right: 0;
   padding-left: 0;
 }
@@ -21,7 +20,7 @@ body {
   margin: 0;
 }
 
-.hamburgerHeader{
+.hamburgerHeader {
   outline: 0;
   display: none;
   position: fixed;
@@ -31,13 +30,13 @@ body {
   @media screen and (max-width: $break-small) {
     display: inline-block;
   }
-  .hamburger{
+  .hamburger {
     outline: 0;
     display: inline-block;
     background-color: $blue;
     margin-right: 60px;
   }
-  .hamburgerNav{
+  .hamburgerNav {
     display: none;
     text-align: center;
     height: 100vh;
@@ -46,37 +45,38 @@ body {
     color: $blue;
     position: relative;
     z-index: 1000;
-    span{
+    span {
       display: inline-block;
       text-decoration: none;
       width: 100%;
-      color : $blue;
+      color: $blue;
       font-size: 31px;
       margin-top: 32px;
       transition-duration: 0.3s;
     }
-    span:hover{
-      color : $darkgrey;
+    span:hover {
+      color: $darkgrey;
       transition-duration: 0.3s;
     }
-    img{
+    img {
       margin-top: 30px;
       transition-duration: 1.5s;
     }
-    img:hover{
+    img:hover {
       width: 30%;
       transition-duration: 1.5s;
     }
   }
-  .titleHeader{
+  .titleHeader {
     display: inline-block;
     font-size: 21px;
-    strong{
+    strong {
       color: $blue;
     }
   }
-};
+}
 
+;
 .header {
   display: inline-block;
   width: 100%;
@@ -90,7 +90,7 @@ body {
     margin-top: -15px;
     width: 57px;
   }
-  .sectionPro{
+  .sectionPro {
     display: inline-block;
     font-size: 12px;
     margin-top: 25px;
@@ -98,14 +98,14 @@ body {
     padding: 5px 10px 5px 10px;
     box-shadow: 0 3px 1px 3px $grey;
     transition-duration: 0.5s;
-    span{
+    span {
       color: $white;
     }
   }
-  .sectionPro:hover{
+  .sectionPro:hover {
     background-color: $white;
     transition-duration: 0.5s;
-    span{
+    span {
       color: $darkgrey;
     }
   }
@@ -128,22 +128,40 @@ body {
     color: $blue;
     transition-duration: 0.3s;
   }
-  .is-active{
+  .is-active {
     color: $blue;
   }
-};
+}
 
+;
 .persAnimation {
   display: inline-block;
   width: 100%;
   height: 90vh;
   background-color: $blue;
   position: relative;
+  .taloZen {
+    width: 30%;
+    position: absolute;
+    animation: levitate 2s alternate ease-in-out infinite;
+    top: 10%;
+    left: 35%;
+    animation: levitate $levitate-speed alternate ease-in-out infinite
+  }
+  @keyframes levitate {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(0, $levitate-offset);
+    }
+  }
   @media screen and (max-width: $break-small) {
     display: none;
   }
-};
+}
 
+;
 .wave {
   display: inline-block;
   margin: 0 auto;
@@ -157,27 +175,25 @@ body {
   @media screen and (max-width: $break-small) {
     display: none;
   }
-};
+}
 
+;
 .home1 {
   width: 100%;
   //height: 100vh;
   font-family: $openSans;
   text-align: center;
-  padding-bottom:20px;
-
+  padding-bottom: 20px;
   .homeTitle1 {
     margin-top: 16vh;
     position: relative;
     display: inline-block;
-
     p {
       font-size: 29px;
       @media screen and (max-width: $break-small) {
         font-size: 20px;
       }
     }
-
     span {
       display: inline-block;
       position: absolute;
@@ -194,19 +210,18 @@ body {
       }
     }
   }
-
   img {
     display: inline-block;
     width: 160px;
-    vertical-align:top;
+    vertical-align: top;
     margin-left: 30px;
-    margin-top:50px;
+    margin-top: 50px;
     margin-right: 50px;
     @media screen and (max-width: $break-small) {
       display: none;
     }
   }
-  .home1Content{
+  .home1Content {
     display: inline-block;
     text-align: center;
     .blocsHome1 {
@@ -270,8 +285,9 @@ body {
       }
     }
   }
-};
+}
 
+;
 .home2 {
   display: inline-block;
   width: 100%;
@@ -286,16 +302,11 @@ body {
     position: relative;
     display: inline-block;
     padding-left: 120px;
-    @media screen and (max-width: $break-medium) {
-      width: 100%;
-      padding-left: 5vh;
-      margin-bottom: 100px;
-    }
     @media screen and (max-width: $break-small) {
       width: 100%;
       padding-left: 5vh;
-      margin-top: 15px;
-      margin-bottom: 50px;
+      margin-top: 20px;
+      margin-bottom: 10px;
     }
     p {
       font-size: 29px;
@@ -318,17 +329,17 @@ body {
   .slider {
     font-family: $openSans;
     background-color: #009db2;
-    .center-slide{
+    .center-slide {
       display: inline-block;
       margin: 30px;
       @media screen and (max-width: $break-small) {
         margin: 10px;
       }
-      .imgSlide{
+      .imgSlide {
         position: relative;
         text-align: center;
         display: inline-block;
-        background-image : url("../../images/clientTalo.png");
+        background-image: url("../../images/clientTalo.png");
         background-size: cover;
         background-position: center;
         background-color: $white;
@@ -337,25 +348,25 @@ body {
         max-height: 100%;
         color: $white;
         font-size: 17px;
-        p{
+        p {
           display: inline-block;
           width: 80%;
           margin-top: 55px;
         }
-        span{
+        span {
           display: inline-block;
           width: 100%;
           text-align: center;
-          em{
+          em {
             color: $blue;
           }
         }
       }
-      .imgCaption{
+      .imgCaption {
         display: inline-block;
         width: 100%;
         background-color: $white;
-        p{
+        p {
           width: 90%;
           padding-left: 10%;
           margin-top: 20px;
@@ -363,12 +374,13 @@ body {
       }
     }
   }
-};
+}
 
+;
 .wave2 {
   display: inline-block;
   background-image: url("../../images/vague2.png");
-  height: 135px;
+  height: 145px;
   width: 100%;
   -webkit-box-shadow: inset 0 40px 0 0 $blue;
   -moz-box-shadow: inset 0 40px 0 0 $blue;
@@ -387,10 +399,10 @@ body {
     background-color: $blue;
     height: 45vh;
   }
-  .videoExplainer{
+  .videoExplainer {
     width: 788px;
     height: 400px;
-    margin-bottom : 60px;
+    margin-bottom: 60px;
     @media screen and (max-width: $break-small) {
       width: 80%;
       height: 40vh;
@@ -423,8 +435,9 @@ body {
       left: -8%;
     }
   }
-};
+}
 
+;
 .home4 {
   margin-top: 60px;
   height: 70vh;
@@ -466,10 +479,10 @@ body {
     margin-bottom: 80px;
     width: 100%;
     vertical-align: middle;
-    .woodQuote{
+    .woodQuote {
       margin-right: 100px;
     }
-    .thermometerQuote{
+    .thermometerQuote {
       margin-left: 100px;
     }
     div {
@@ -486,7 +499,7 @@ body {
       color: $black;
     }
   }
-  a{
+  a {
     display: inline-block;
     padding: 0px 40px 5px 40px;
     box-shadow: 0 3px 1px 3px $grey;
@@ -496,13 +509,15 @@ body {
     text-decoration: none;
     transition-duration: 0.5s;
   }
-  a:hover{
+  a:hover {
     background-color: $blue;
     color: $white;
     transition-duration: 0.5s;
   }
-};
-.wave3{
+}
+
+;
+.wave3 {
   display: inline-block;
   width: 100%;
   height: 80px;
@@ -511,9 +526,9 @@ body {
   background-image: url("../../images/wave3.png");
   background-position: top;
   background-repeat: no-repeat;
-
 }
-.footer{
+
+.footer {
   display: inline-block;
   width: 100%;
   height: 200px;
@@ -521,17 +536,17 @@ body {
   color: $white;
   text-transform: uppercase;
   text-align: center;
-  h2{
+  h2 {
     font-size: 20px;
   }
-  .infosFooter{
+  .infosFooter {
     display: inline-block;
     font-size: 18px;
     margin-top: 15px;
-    span{
+    span {
       display: inline-block;
       margin-right: 30px;
-      a{
+      a {
         text-decoration: none;
         color: $white;
       }

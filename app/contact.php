@@ -8,63 +8,63 @@ require("partials/_nav.php");
     <p>Restons en <strong>contact</strong></p>
   </div>
   <section class="formulaire">
-  <form class="form-horizontal" role="form" method="post" action="contact.php">
-  	<div class="form-group nom">
-  		<div class="col">
-  			<input type="text" class="form-control nomPrenom" id="name" name="nom" placeholder="Nom" value="">
-  		</div>
-  	</div>
-    <div class="form-group prenom">
-      <div class="col">
+    <form class="form-horizontal" role="form" method="post" action="contact.php">
+      <div class="form-group nom">
+        <div class="col">
+          <input type="text" class="form-control nomPrenom" id="name" name="nom" placeholder="Nom" value="">
+        </div>
+      </div>
+      <div class="form-group prenom">
+        <div class="col">
           <input type="text" class="form-control" id="name" name="prenom" placeholder="Prénom" value="">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-lg">
+          <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-md-12 col-sm-12">
+          <textarea class="form-control message" rows="4" name="message"></textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-1">
+          <input id="submit" name="submit" type="submit" value="Envoyez" class="btn btn-primary">
+        </div>
+      </div>
+    </form>
+  </section>
+  <section class="map">
+
+    <iframe class="mapIframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.3335834604204!2d2.2768014151249574!3d48.87091700777946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66ff63ad6c7d7%3A0x475eed39821352be!2s7+Place+du+Chancelier+Adenauer%2C+75116+Paris!5e0!3m2!1sfr!2sfr!4v1496308523251" frameborder="0" margin="0 auto" width="70%" height="320" style="border:0" allowfullscreen></iframe>
+  </section>
+</section>
+
+<div class="wave"></div>
+<section class="contactContener">
+  <div class="contactTitle2">
+    <span>Contact</span>
+    <p>Nous sommes aussi accessible sur d’autres<strong> plateformes </strong>!</p>
+    </p>
+  </div>
+  <div class="social">
+    <div class="twitter">
+      <img src="images/twitter.png" alt="icone twitwi">
+    </div>
+    <div class="facebook">
+      <img src="images/facebook.png" alt="icone de rechargement">
+    </div>
+    <div class="thermometerQuote">
+      <img src="images/instagram.png" alt="icone de thermomètre">
     </div>
   </div>
-  	<div class="form-group">
-  		<div class="col-lg">
-  			<input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
-  		</div>
-  	</div>
-  	<div class="form-group">
-  		<div class="col-md-12 col-sm-12">
-  			<textarea class="form-control message" rows="4" name="message"></textarea>
-  		</div>
-  	</div>
-    <div class="form-group">
-    		<div class="col-sm-offset-1">
-    			<input id="submit" name="submit" type="submit" value="Envoyez" class="btn btn-primary">
-    		</div>
-    	</div>
-      </form>
+  <p>Par mail, à l’adresse suivante</p>
+  <p class="contactTalo">contac@taloenergy.fr</p>
+  <p>Et par téléphone au </p>
+  <p class="contactTalo">01 02 03 04 05</p>
 </section>
-<section class="map">
-
-<iframe class="mapIframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.3335834604204!2d2.2768014151249574!3d48.87091700777946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66ff63ad6c7d7%3A0x475eed39821352be!2s7+Place+du+Chancelier+Adenauer%2C+75116+Paris!5e0!3m2!1sfr!2sfr!4v1496308523251" frameborder ="0" margin= "0 auto" width="70%" height="320" style="border:0" allowfullscreen></iframe>
- </section>
-</section>
-
- <div class="wave"></div>
- <section class="contactContener">
-   <div class="contactTitle2">
-     <span>Contact</span>
-     <p>Nous sommes aussi accessible sur d’autres<strong> plateformes </strong>!</p>
-     </p>
-   </div>
-   <div class="social">
-     <div class="twitter">
-      <img src="images/twitter.png" alt="icone twitwi">
-     </div>
-     <div class="facebook">
-       <img src="images/facebook.png" alt="icone de rechargement">
-     </div>
-     <div class="thermometerQuote">
-       <img src="images/instagram.png" alt="icone de thermomètre">
-     </div>
-   </div>
-    <p>Par mail, à l’adresse suivante</p>
-<p class="contactTalo">contac@taloenergy.fr</p>
-<p>Et par téléphone au </p>
- <p class="contactTalo">01 02 03 04 05</p>
- </section>
 
 <?php
 require_once('phpmailer/PHPMailerAutoload.php');
@@ -112,5 +112,5 @@ if (isset($_POST['submit'])) {
   }
 }
 ?>
- <?php require("partials/_footer.php");
+  <?php require("partials/_footer.php");
  ?>
