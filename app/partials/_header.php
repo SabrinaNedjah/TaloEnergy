@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +10,6 @@
   <link rel="shortcut icon" href="images/logoTaloWhite.png" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles/css/main.css" />
-  <link rel="stylesheet" type="text/css" href="styles/slick.css" />
-  <link rel="stylesheet" type="text/css" href="styles/slick-theme.css" />
 </head>
+
 <body>

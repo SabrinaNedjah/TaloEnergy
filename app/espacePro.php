@@ -1,4 +1,6 @@
 <?php
+ini_set("display_errors",0);error_reporting(0);
+require("partials/functions.php");
 require("partials/_header.php");
 require("partials/_nav.php");
 ?>
@@ -101,7 +103,6 @@ require("partials/_nav.php");
     </div>
   </div>
 </div>
-</div>
 <div class="blue">
   <div class="container thirdPart">
     <div class="row relProWhite">
@@ -120,8 +121,6 @@ require("partials/_nav.php");
     </div>
   </div>
 </div>
-</div>
-
 <div class="container forthPart">
   <div class="proBase">
     <h4 class="forthTitle">Les 3 engagements de la communauté TALO Pro
@@ -153,115 +152,107 @@ require("partials/_nav.php");
   <div>
 
     <section class="formulaire container">
-      <form class="form-horizontal" role="form" method="post" action="espacePro.php">
-        <div class="form-group row">
-          <div class="col-xs-6  col-md-3 col-md-offset-3">
-            <input type="text" class="form-control nomPrenom" id="name" name="nom" placeholder="Nom" value="" required="required">
+      <?php
+        require_once('phpmailer/PHPMailerAutoload.php');
+
+        if (isset($_POST['submit'])) {
+          $mail = new PHPMailer();
+          $nom = $_POST["nom"];
+          $prenom = $_POST["prenom"];
+          $phone = $_POST["phone"];
+          $usrmail = $_POST["email"];
+          $msg = $_POST["message"];
+
+
+          if(not_empty(['nom', 'prenom', 'phone', 'email', 'message']))
+          {
+            $errors = [];
+            extract($_POST);
+
+            if (mb_strlen($nom)<  2) {
+              array_push($errors, "Il faut remplir le champ Nom");
+            }
+
+            if (mb_strlen($prenom)< 2) {
+              array_push($errors, "Il faut remplir le champ Prénom");
+            }
+
+            if (mb_strlen($phone)< 10) {
+              array_push($errors, "Il faut remplir le champ téléphone");
+            }
+
+            if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+              array_push($errors, "Adresse email invalide");
+            }
+
+            if (mb_strlen($msg)< 30) {
+              array_push($errors, "Il faut remplir un message (30 caractère minimum)");
+            }
+
+            if(count($errors) === 0) {
+              $mail->Host = ' localhost';
+              $mail->SMTPAuth = true;
+              $mail->Username = 'taloenergydev@gmail.com';
+              $mail->Password = 'Sabrina2017';
+              $mail->SMTPSecure = 'tls';
+              $mail->Port = 587;
+              $mail->setFrom($usrmail, "$nom $prenom" );
+              $mail->addAddress('taloenergydev@gmail.com', 'taloenergydev');
+              $mail->addReplyTo($usrmail, 'Information');
+              $mail->isHTML(false);
+              $mail->Subject =  "Mail contact ";
+              $mail->Body    =  "Nom: $nom Prénom: $prenom\n \n $msg";
+
+              if(!$mail->send()) {
+                echo 'Un problème est survenu, veuillez réessayer.';
+                echo 'Mailer Error: ' . $mail->ErrorInfo;
+              } else {
+                echo "<div class='alert alert-success'>
+          <strong>Success!</strong> Votre message a bien été pris en compte. Nous vous répondrons d’ici 48 heures.</div>";
+              }
+            } else {
+              echo '<div class="alert alert-warning"><ul>';
+              for($i = 0; $i < count($errors); $i++) {
+                echo '<li>' . $errors[$i] .'</li>';
+              }
+              echo '</ul> </div>';
+            }
+          }
+        }
+        ?>
+        <form class="form-horizontal" role="form" method="post" action="espacePro.php">
+          <div class="form-group row">
+            <div class="col-xs-6  col-md-3 col-md-offset-3">
+              <input type="text" class="form-control nomPrenom" id="name" name="nom" placeholder="Nom" value="" required="required">
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <input type="text" class="form-control" id="name" name="prenom" placeholder="Prénom" value="" required="required">
+            </div>
           </div>
-          <div class="col-xs-6 col-md-3">
-            <input type="text" class="form-control" id="name" name="prenom" placeholder="Prénom" value="" required="required">
+          <div class="form-group row">
+            <div class="col-xs-12 col-md-6 col-md-offset-3">
+              <input type="text" class="form-control" id="phone" name="phone" placeholder="Tel : 06 84 15 95 84" value="">
+            </div>
           </div>
-        </div>
-        <div class="form-group row">
-          <div class="col-xs-12 col-md-6 col-md-offset-3">
-            <input type="text" class="form-control" id="phone" name="phone" placeholder="Tel : +33 06 84 15 95 84" value="">
+          <div class="form-group row">
+            <div class="col-xs-12 col-md-6 col-md-offset-3">
+              <input type="email" class="form-control" id="email" name="email" placeholder="E-mail : example@domain.com" value="">
+            </div>
           </div>
-        </div>
-        <div class="form-group row">
-          <div class="col-xs-12 col-md-6 col-md-offset-3">
-            <input type="email" class="form-control" id="email" name="email" placeholder="E-mail : example@domain.com" value="">
+          <div class="form-group row">
+            <div class="col-xs-12 col-md-6 col-md-offset-3">
+              <textarea class="form-control" rows="4" name="message" placeholder="Description de votre profession"></textarea>
+            </div>
           </div>
-        </div>
-        <div class="form-group row">
-          <div class="col-xs-12 col-md-6 col-md-offset-3">
-            <textarea class="form-control" rows="4" name="message" placeholder="Description de votre profession"></textarea>
+          <div class="form-group row">
+            <div class="col-xs-2 col-xs-offset-6 col-sm-2 col-sm-offset-6">
+              <input id="submit" name="submit" type="submit" value="Envoyer" class="btn btn-primary sendButton">
+            </div>
           </div>
-        </div>
-        <div class="form-group row">
-          <div class="col-xs-2 col-xs-offset-6 col-sm-2 col-sm-offset-6">
-            <input id="submit" name="submit" type="submit" value="Envoyer" class="btn btn-primary sendButton">
-          </div>
-        </div>
-      </form>
+        </form>
     </section>
   </div>
 </div>
 
-
-
-<?php
-  require_once('phpmailer/PHPMailerAutoload.php');
-
-  if (isset($_POST['submit'])) {
-    $mail = new PHPMailer();
-    $nom = $_POST["nom"];
-    $prenom = $_POST["prenom"];
-    $phone = $_POST["phone"];
-    $usrmail = $_POST["email"];
-    $msg = $_POST["message"];
-
-
-    if(not_empty(['nom', 'prenom', 'phone', 'email', 'message']))
-      {
-          $errors = [];
-          extract($_POST);
-
-          if(mb_strlen($nom)<  1)
-        {
-            array_push($errors, "Il faut remplir le champ Nom");
-        }
-        if(mb_strlen($prenom)< 1)
-        {
-            array_push($errors, "Il faut remplir le champ Prénom");
-        }
-
-          if(! filter_var($email, FILTER_VALIDATE_EMAIL))
-          {
-              array_push($errors, "Adresse email invalide");
-          }
-
-
-    if(count($errors) === 0)
-            {
-    //$mail->isSMTP();
-    //$mail->SMTPDebug = 2;                               // Enable verbose debug output
-                                       // Set mailer to use SMTP
-    $mail->Host = ' localhost';  // Specify main and backup SMTP servers
-    $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'taloenergydev@gmail.com';                 // SMTP username
-    $mail->Password = 'Sabrina2017';                           // SMTP password
-    $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-    $mail->Port = 587;                                    // TCP port to connect to
-
-    $mail->setFrom($usrmail, "$nom $prenom" );
-    $mail->addAddress('taloenergydev@gmail.com', 'taloenergydev');     // Add a recipient
-    $mail->addReplyTo($usrmail, 'Information');
-    $mail->isHTML(false);                                  // Set email format to HTML
-
-    $mail->Subject =  "Mail contact ";
-    $mail->Body    =  "Nom: $nom Prénom: $prenom\n Numero de téléphone: $phone \n $msg";
-    if(!$mail->send()) {
-      echo 'Message could not be sent.';
-      echo 'Mailer Error: ' . $mail->ErrorInfo;
-    }
-
-    else {
-      echo "<script>alert(\"Votre message a bien été envoyé !\")</script>";
-    }
-
-  }
-    else
-    {
-        $errors[] = "Veuillez S'il vous plait remplir tout les champs";
-    }
-
-  }
-
-
-  }
-
-
-
-  ?>
-  <?php require("partials/_footer.php");
- ?>
+<?php require("partials/_footer.php");
+   ?>

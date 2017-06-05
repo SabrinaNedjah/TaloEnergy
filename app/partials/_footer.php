@@ -1,11 +1,11 @@
 <div class="wave3"></div>
 <footer class="footer">
-  <img src="images/logoblanc.png" alt="logo de Talo Energy en blanc">
+  <a href="index.php"><img src="images/logoblanc.png" alt="logo de Talo Energy en blanc"></a>
   <div class="infosFooter">
     <span>©2017 - TALO ENERGY</span>
     <p>
       <span><a href="contact.php">CONTACT</a></span>
-      <span><a href="#">MENTIONS LÉGALES</a></span>
+      <span><a href="mentionLegal.php">MENTIONS LÉGALES</a></span>
     </P>
   </div>
 </footer>

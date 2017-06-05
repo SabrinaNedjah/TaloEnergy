@@ -12,7 +12,6 @@ require("partials/_nav.php");
     <div class="x2">
       <div class="cloud"></div>
     </div>
-
     <div class="x3">
       <div class="cloud"></div>
     </div>
@@ -143,7 +142,7 @@ require("partials/_nav.php");
   </div>
   <div class="works4">
     <div class="woodQuote">
-      <img src="images/wood.png" alt="icone de tas de bois">
+      <img src="images/window.svg" alt="icone de tas de bois">
       <span>Menuiserie</span>
     </div>
     <div class="reloadQuote">

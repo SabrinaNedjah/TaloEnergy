@@ -20,7 +20,7 @@
 <header class="header">
   <div class="container">
     <div class="row">
-      <a class="col-md-3"><img src="images/logoTalo.png" class="logoTalo" alt="logo de Talo Energy"></a>
+      <a class="col-md-3" href="index.php"><img src="images/logoTalo.png" class="logoTalo" alt="logo de Talo Energy"></a>
       <a class="col-md-2 is-active" href="index.php">Accueil</a>
       <a class="col-md-2" href="espritTalo.php">L'esprit Talo</a>
       <a class="col-md-3" href="contact.php">Contactez-nous</a>

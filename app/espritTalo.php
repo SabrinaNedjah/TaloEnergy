@@ -56,7 +56,6 @@ require("partials/_nav.php");
     </div>
   </section>
 </section>
-
 <section class="equipeTalo">
   <div class="waveTeam">
     <div class="blocKhalid">

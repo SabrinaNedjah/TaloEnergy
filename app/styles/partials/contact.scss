@@ -1,7 +1,7 @@
 .DivBlue {
   display: inline-block;
   width: 100%;
-  height: 90vh;
+  height: 97vh;
   background-color: $blue;
   position: relative;
   text-align: center;
@@ -16,14 +16,15 @@
     width: 100%;
     height: 70px;
     text-align: left;
-    margin-left: 120px;
+    padding-left: 120px;
     padding-top: 20px;
     p {
       font-size: 29px;
       color: $white;
       @media screen and (max-width: $break-small) {
         font-size: 20px;
-        margin: 43px -19px;
+        padding-top: 30px;
+
       }
     }
     span {
@@ -33,12 +34,13 @@
       left: 0px;
       font-size: 80px;
       color: $blue;
-      opacity: 0.10;
+      opacity: 0.20;
       color: $white;
       @media screen and (max-width: $break-small) {
         font-size: 50px;
         top: 33px;
-        left: -83px;
+        left: 37px;
+        font-weight: bold;
       }
     }
   }
@@ -178,7 +180,7 @@
     padding: 0 40px 5px;
     box-shadow: 0 3px 1px 3px $grey;
     background-color: $grey;
-    font-style: 28px;
+    font-size: 28px;
     color: $blue;
     text-decoration: none;
     transition-duration: 0.5s;

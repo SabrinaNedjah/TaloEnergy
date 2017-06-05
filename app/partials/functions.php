@@ -1,6 +1,4 @@
 <?php
-
-//array() peut etre remplacé par []
 if(!function_exists('not_empty'))
 {
     function not_empty($fields = [])
