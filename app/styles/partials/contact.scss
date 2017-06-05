@@ -6,7 +6,8 @@
   position: relative;
   text-align: center;
   @media screen and (max-width: $break-small) {
-    height: 80vh;
+    height: 86vh;
+    margin-top: 42px;
   }
   .contactTitle {
     display: inline-block;
@@ -22,7 +23,7 @@
       color: $white;
       @media screen and (max-width: $break-small) {
         font-size: 20px;
-        color: $white;
+        margin: 43px -19px;
       }
     }
     span {
@@ -36,13 +37,12 @@
       color: $white;
       @media screen and (max-width: $break-small) {
         font-size: 50px;
-        top: -30px;
-        left: -30px;
-        color: $white;
+        top: 33px;
+        left: -83px;
       }
     }
   }
-  .formulaire {
+  .formm {
     float: left;
     width: 40%;
     font-family: $openSans;
@@ -69,17 +69,21 @@
       font-size: 20px;
       background: #F6F6F6;
       padding: 11px 20px 10px;
+      border: solid $blue 2px;
       text-decoration: none;
+      transition-duration: 0.3s;
       margin-left: 0;
     }
     .btn:hover {
       text-decoration: none;
       background: #00B4CB;
+      transition-duration: 0.3s;
       color: $white;
     }
     .nom {
       max-width: 100%;
       float: left;
+      padding-right: 68px;
     }
     .prenom {
       max-width: 100%;
@@ -96,19 +100,22 @@
     }
     @media screen and (max-width: $break-small) {
       width: 100%;
-      height: 40vh;
-      margin-top: 50px;
+      padding-top: 43px;
+      margin: 0 auto;
     }
   }
+};
+.wave{
+  @media screen and (max-width: $break-medium) {
+    display: none;
+  }
 }
-
-;
 .contactContener {
   margin-top: 60px;
   height: 70vh;
   text-align: center;
   @media screen and (max-width: $break-small) {
-    display: none;
+    width: 100%;
   }
   .contactTitle2 {
     display: inline-block;
@@ -143,6 +150,9 @@
     margin-bottom: 40px;
     width: 100%;
     vertical-align: middle;
+    @media screen and (max-width: $break-small) {
+      margin-top: 20px;
+    }
     .twitter {
       margin-right: 0;
     }
@@ -178,9 +188,15 @@
     color: $white;
     transition-duration: 0.5s;
   }
-  .contactTalo {
+  .contactTaloBlue {
+    color: $black;
+    font-size: 20px;
+    margin: 0;
+  }
+  .contactTaloBlue {
     color: $blue;
     font-size: 20px;
+    margin-bottom: 10px;
   }
   p {
     font-size: 20px;

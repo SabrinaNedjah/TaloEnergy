@@ -692,15 +692,21 @@ body {
 .header {
   display: inline-block;
   width: 100%;
-  height: 72px;
+  height: 75px;
   background-color: #F6F6F6;
   font-size: 20px; }
+  @media screen and (max-width: 1024px) {
+    .header {
+      height: 100px; } }
   @media screen and (max-width: 665px) {
     .header {
       display: none; } }
   .header .logoTalo {
-    margin-top: -15px;
-    width: 57px; }
+    margin-top: -2%;
+    width: 130px; }
+    @media screen and (max-width: 1024px) {
+      .header .logoTalo {
+        margin-top: 0; } }
   .header .sectionPro {
     display: inline-block;
     font-size: 12px;
@@ -732,22 +738,111 @@ body {
   .header a:hover {
     color: #00B4CB;
     transition-duration: 0.3s; }
-  .header .is-active {
-    color: #00B4CB; }
 
 .persAnimation {
   display: inline-block;
   width: 100%;
-  height: 90vh;
-  background-color: #00B4CB;
-  position: relative; }
-  .persAnimation .taloZen {
-    width: 30%;
+  height: 105vh;
+  background-image: url("../../images/maison.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  position: relative;
+  /* KEYFRAMES */
+  /* ANIMATIONS */ }
+  .persAnimation #background-wrap {
+    bottom: 0;
+    left: 0;
+    padding-top: 50px;
+    position: relative;
+    right: 0;
+    top: 0;
+    z-index: -1; }
+
+@-webkit-keyframes animateCloud {
+  0% {
+    margin-left: -1000px; }
+  100% {
+    margin-left: 100%; } }
+
+@-moz-keyframes animateCloud {
+  0% {
+    margin-left: -1000px; }
+  100% {
+    margin-left: 100%; } }
+
+@keyframes animateCloud {
+  0% {
+    margin-left: -1000px; }
+  100% {
+    margin-left: 100%; } }
+  .persAnimation .x1 {
+    -webkit-animation: animateCloud 35s linear infinite;
+    -moz-animation: animateCloud 35s linear infinite;
+    animation: animateCloud 35s linear infinite;
+    -webkit-transform: scale(0.65);
+    -moz-transform: scale(0.65);
+    transform: scale(0.65); }
+  .persAnimation .x2 {
+    -webkit-animation: animateCloud 20s linear infinite;
+    -moz-animation: animateCloud 20s linear infinite;
+    animation: animateCloud 20s linear infinite;
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    transform: scale(0.3);
+    -webkit-opacity: 0.5;
+    -moz-opacity: 0.5;
+    opacity: 0.5; }
+  .persAnimation .x3 {
+    -webkit-animation: animateCloud 30s linear infinite;
+    -moz-animation: animateCloud 30s linear infinite;
+    animation: animateCloud 30s linear infinite;
+    -webkit-transform: scale(0.4);
+    -moz-transform: scale(0.4);
+    transform: scale(0.4); }
+  .persAnimation .cloud {
+    background: #fff;
+    background: -moz-linear-gradient(top, #fff 5%, #f1f1f1 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #fff), color-stop(100%, #f1f1f1));
+    background: -webkit-linear-gradient(top, #fff 5%, #f1f1f1 100%);
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    -webkit-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
+    height: 120px;
+    position: relative;
+    width: 350px; }
+  .persAnimation .cloud:after,
+  .persAnimation .cloud:before {
+    background: #fff;
+    content: '';
     position: absolute;
-    animation: levitate 2s alternate ease-in-out infinite;
-    top: 10%;
-    left: 35%;
-    animation: levitate 1.2s alternate ease-in-out infinite; }
+    z-indeX: -1; }
+  .persAnimation .cloud:after {
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    height: 100px;
+    left: 50px;
+    top: 0px;
+    width: 100px; }
+  .persAnimation .cloud:before {
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    border-radius: 200px;
+    width: 180px;
+    height: 180px;
+    right: 50px;
+    top: -90px; }
+  .persAnimation .taloZen {
+    width: 50%;
+    position: absolute;
+    animation: levitate 3s alternate ease-in-out infinite;
+    top: 15%;
+    left: 25%;
+    opacity: 1; }
 
 @keyframes levitate {
   0% {
@@ -778,14 +873,15 @@ body {
   text-align: center;
   padding-bottom: 20px; }
   .home1 .homeTitle1 {
-    margin-top: 16vh;
+    margin-top: 14vh;
     position: relative;
     display: inline-block; }
     .home1 .homeTitle1 p {
       font-size: 29px; }
       @media screen and (max-width: 665px) {
         .home1 .homeTitle1 p {
-          font-size: 20px; } }
+          font-size: 20px;
+          margin: 0 15px; } }
     .home1 .homeTitle1 span {
       display: inline-block;
       position: absolute;
@@ -841,13 +937,11 @@ body {
         .home1 .home1Content .blocsHome1 .roundH1 img {
           display: inline-block;
           text-align: center;
-          margin: 25px 0 0;
-          width: 60px;
-          height: 60px; }
+          margin: 25px auto;
+          width: 60px; }
           @media screen and (max-width: 665px) {
             .home1 .home1Content .blocsHome1 .roundH1 img {
               width: 30px;
-              height: 30px;
               margin: 10px 0 0; } }
       .home1 .home1Content .blocsHome1 h1 {
         color: #00B4CB;
@@ -891,6 +985,10 @@ body {
         margin-bottom: 10px; } }
     .home2 .homeTitle3 p {
       font-size: 29px; }
+      @media screen and (max-width: 665px) {
+        .home2 .homeTitle3 p {
+          font-size: 22px;
+          margin: 15px 15px; } }
     .home2 .homeTitle3 span {
       display: inline-block;
       position: absolute;
@@ -898,11 +996,11 @@ body {
       left: 6%;
       font-size: 80px;
       color: #F6F6F6;
-      opacity: 0.20; }
+      opacity: 0.40; }
       @media screen and (max-width: 665px) {
         .home2 .homeTitle3 span {
-          top: 0;
-          left: 30%;
+          top: -10px;
+          left: 30px;
           font-size: 50px; } }
   .home2 .slider {
     font-family: "Open Sans", sans-serif;
@@ -950,9 +1048,11 @@ body {
   background-image: url("../../images/vague2.png");
   height: 145px;
   width: 100%;
+  background-repeat: round;
   -webkit-box-shadow: inset 0 40px 0 0 #00B4CB;
   -moz-box-shadow: inset 0 40px 0 0 #00B4CB;
-  box-shadow: inset 0 40px 0 0 #00B4CB; }
+  box-shadow: inset 0 40px 0 0 #00B4CB;
+  background-repeat: round; }
   @media screen and (max-width: 665px) {
     .wave2 {
       display: none; } }
@@ -960,7 +1060,6 @@ body {
 .home3 {
   display: inline-block;
   width: 100%;
-  height: 100vh;
   text-align: center; }
   @media screen and (max-width: 665px) {
     .home3 {
@@ -999,8 +1098,7 @@ body {
       left: -8%; }
 
 .home4 {
-  margin-top: 60px;
-  height: 70vh;
+  margin: 60px;
   text-align: center; }
   @media screen and (max-width: 665px) {
     .home4 {
@@ -1023,10 +1121,14 @@ body {
       display: inline-block;
       position: absolute;
       bottom: -30%;
-      left: 23%;
+      eft: 19%;
       font-size: 80px;
       color: #00B4CB;
       opacity: 0.14; }
+      @media screen and (max-width: 665px) {
+        .home4 .homeTitle4 span {
+          left: -12%;
+          bottom: 17%; } }
   .home4 .works4 {
     display: inline-block;
     margin-top: 60px;
@@ -1068,7 +1170,7 @@ body {
 .wave3 {
   display: inline-block;
   width: 100%;
-  height: 80px;
+  height: 82px;
   box-shadow: 0px 20px 0px 20px #00B4CB;
   margin: 0 auto;
   background-image: url("../../images/wave3.png");
@@ -1078,23 +1180,29 @@ body {
 .footer {
   display: inline-block;
   width: 100%;
-  height: 200px;
   background-color: #00B4CB;
   color: #F6F6F6;
   text-transform: uppercase;
   text-align: center; }
+  .footer img {
+    width: 20%;
+    margin: 0 auto; }
   .footer h2 {
     font-size: 20px; }
   .footer .infosFooter {
+    width: 100%;
     display: inline-block;
-    font-size: 18px;
-    margin-top: 15px; }
-    .footer .infosFooter span {
-      display: inline-block;
-      margin-right: 30px; }
-      .footer .infosFooter span a {
-        text-decoration: none;
-        color: #F6F6F6; }
+    font-size: 14px;
+    margin-top: 15px;
+    padding-bottom: 42px; }
+    .footer .infosFooter p {
+      margin-bottom: 0; }
+      .footer .infosFooter p span {
+        display: inline-block;
+        margin-right: 10px; }
+        .footer .infosFooter p span a {
+          text-decoration: none;
+          color: #F6F6F6; }
 
 .DivBlue {
   display: inline-block;
@@ -1105,7 +1213,8 @@ body {
   text-align: center; }
   @media screen and (max-width: 665px) {
     .DivBlue {
-      height: 80vh; } }
+      height: 86vh;
+      margin-top: 42px; } }
   .DivBlue .contactTitle {
     display: inline-block;
     position: relative;
@@ -1121,7 +1230,7 @@ body {
       @media screen and (max-width: 665px) {
         .DivBlue .contactTitle p {
           font-size: 20px;
-          color: #F6F6F6; } }
+          margin: 43px -19px; } }
     .DivBlue .contactTitle span {
       display: inline-block;
       position: absolute;
@@ -1134,26 +1243,25 @@ body {
       @media screen and (max-width: 665px) {
         .DivBlue .contactTitle span {
           font-size: 50px;
-          top: -30px;
-          left: -30px;
-          color: #F6F6F6; } }
-  .DivBlue .formulaire {
+          top: 33px;
+          left: -83px; } }
+  .DivBlue .formm {
     float: left;
     width: 40%;
     font-family: "Open Sans", sans-serif;
     margin-top: 50px;
     margin-left: 120px; }
     @media screen and (max-width: 1024px) {
-      .DivBlue .formulaire {
+      .DivBlue .formm {
         width: 30%; } }
     @media screen and (max-width: 665px) {
-      .DivBlue .formulaire {
+      .DivBlue .formm {
         width: 80%;
         margin-left: 50px; } }
-    .DivBlue .formulaire .message {
+    .DivBlue .formm .message {
       margin: 0 -1px 0 0;
       height: 195px; }
-    .DivBlue .formulaire .btn {
+    .DivBlue .formm .btn {
       -webkit-border-radius: 6;
       -moz-border-radius: 6;
       border-radius: 6px;
@@ -1163,16 +1271,20 @@ body {
       font-size: 20px;
       background: #F6F6F6;
       padding: 11px 20px 10px;
+      border: solid #00B4CB 2px;
       text-decoration: none;
+      transition-duration: 0.3s;
       margin-left: 0; }
-    .DivBlue .formulaire .btn:hover {
+    .DivBlue .formm .btn:hover {
       text-decoration: none;
       background: #00B4CB;
+      transition-duration: 0.3s;
       color: #F6F6F6; }
-    .DivBlue .formulaire .nom {
+    .DivBlue .formm .nom {
       max-width: 100%;
-      float: left; }
-    .DivBlue .formulaire .prenom {
+      float: left;
+      padding-right: 68px; }
+    .DivBlue .formm .prenom {
       max-width: 100%;
       float: left; }
   .DivBlue .map {
@@ -1186,8 +1298,12 @@ body {
     @media screen and (max-width: 665px) {
       .DivBlue .map {
         width: 100%;
-        height: 40vh;
-        margin-top: 50px; } }
+        padding-top: 43px;
+        margin: 0 auto; } }
+
+@media screen and (max-width: 1024px) {
+  .wave {
+    display: none; } }
 
 .contactContener {
   margin-top: 60px;
@@ -1195,7 +1311,7 @@ body {
   text-align: center; }
   @media screen and (max-width: 665px) {
     .contactContener {
-      display: none; } }
+      width: 100%; } }
   .contactContener .contactTitle2 {
     display: inline-block;
     position: relative;
@@ -1226,6 +1342,9 @@ body {
     margin-bottom: 40px;
     width: 100%;
     vertical-align: middle; }
+    @media screen and (max-width: 665px) {
+      .contactContener .social {
+        margin-top: 20px; } }
     .contactContener .social .twitter {
       margin-right: 0; }
     .contactContener .social .facebook {
@@ -1254,9 +1373,14 @@ body {
     background-color: #00B4CB;
     color: #F6F6F6;
     transition-duration: 0.5s; }
-  .contactContener .contactTalo {
+  .contactContener .contactTaloBlue {
+    color: #171717;
+    font-size: 20px;
+    margin: 0; }
+  .contactContener .contactTaloBlue {
     color: #00B4CB;
-    font-size: 20px; }
+    font-size: 20px;
+    margin-bottom: 10px; }
   .contactContener p {
     font-size: 20px; }
 
@@ -1584,7 +1708,8 @@ body {
       .equipeTalo .waveTeam .blocKhalid .roundPP {
         display: inline-block;
         border-radius: 50%;
-        background-color: #F6F704;
+        background-image: url("../../images/khalid.jpg");
+        background-size: cover;
         width: 105px;
         height: 105px; }
       .equipeTalo .waveTeam .blocKhalid .socialRounds {
@@ -1612,7 +1737,8 @@ body {
       .equipeTalo .waveTeam .blocRaphael .roundPP {
         display: inline-block;
         border-radius: 50%;
-        background-color: #F6F704;
+        background-image: url("../../images/raph.jpg");
+        background-size: cover;
         width: 105px;
         height: 105px; }
       .equipeTalo .waveTeam .blocRaphael .socialRounds {
@@ -1640,7 +1766,8 @@ body {
       .equipeTalo .waveTeam .blocAbdes .roundPP {
         display: inline-block;
         border-radius: 50%;
-        background-color: #F6F704;
+        background-image: url("../../images/abdes.jpg");
+        background-size: cover;
         width: 105px;
         height: 105px; }
       .equipeTalo .waveTeam .blocAbdes .socialRounds {
@@ -1656,7 +1783,8 @@ body {
 .AccomClient {
   display: inline-block;
   width: 100%;
-  height: auto; }
+  height: auto;
+  margin-bottom: 40px; }
   @media screen and (max-width: 665px) {
     .AccomClient {
       height: auto; } }
@@ -1817,11 +1945,10 @@ h2.underTitle {
 .presentation {
   height: auto; }
   .presentation .casePart1 {
-    padding: 20px;
+    padding: 10px;
     margin-bottom: 20px;
-    margin-top: 20px;
     background: #EBEBEB;
-    height: 370px; }
+    height: 380px; }
     @media screen and (max-width: 1024px) {
       .presentation .casePart1 {
         height: auto;
@@ -1836,11 +1963,16 @@ h2.underTitle {
       color: #00B4CB;
       font-size: 1.325em;
       font-weight: bold; }
-    @media screen and (max-width: 665px) {
-      .presentation .casePart1 img {
-        display: none; } }
+    .presentation .casePart1 .ballSvg {
+      margin: 10px auto;
+      width: 6em;
+      height: 6em; }
+      @media screen and (max-width: 665px) {
+        .presentation .casePart1 .ballSvg {
+          display: none; } }
     .presentation .casePart1 .caseText {
-      font-size: 1.250em; }
+      font-size: 1.250em;
+      margin-bottom: 18px; }
 
 /*
 Second part
@@ -1891,9 +2023,7 @@ Second part
       top: -50px; } }
   .ballTalo .imageTaloBall {
     width: 4.5em;
-    height: 4.5em;
-    margin-top: -1px;
-    margin-left: 1px; }
+    margin: 0 auto; }
 
 .ballWorker {
   width: 5.5em;
@@ -1906,10 +2036,11 @@ Second part
   right: -50px;
   top: -50px; }
   .ballWorker .workerBall {
-    margin-top: 6px; }
+    width: 4.5em;
+    margin: 10% auto; }
     @media screen and (max-width: 665px) {
       .ballWorker .workerBall {
-        margin: 0; } }
+        margin-top: 15%; } }
 
 .ballRelative {
   position: relative; }
@@ -1924,22 +2055,16 @@ Second part
   padding: 20px;
   border-radius: 3px; }
 
-.msgRightSide, .msgLeftSide {
-  margin-bottom: 10px; }
+.msgRightSide,
+.msgLeftSide {
+  margin-bottom: 24px; }
 
 .secondTitle {
   margin-bottom: 40px;
   font-size: 18px; }
 
 .secondPart {
-  margin-bottom: 130px; }
-
-.ballSvg {
-  width: 6em;
-  height: 6em; }
-  @media screen and (max-width: 665px) {
-    .ballSvg {
-      display: none; } }
+  margin-bottom: 62px; }
 
 /*
 Third part
@@ -2027,7 +2152,7 @@ Forth Part
   height: 100px; }
 
 .sendButton {
-  margin-left: -55px;
+  margin-left: -63px;
   padding-left: 24px;
   padding-right: 24px; }
 
@@ -2045,7 +2170,7 @@ misc
 .dispoBlock {
   position: absolute;
   background: #00B4CB;
-  height: 30px;
+  height: 37px;
   width: 100%;
   bottom: 0;
   left: 0;

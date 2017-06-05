@@ -4,10 +4,10 @@
   max-width: 200px;
   margin: 0 auto;
   @media screen and (max-width: $break-medium) {
-  display: none;
+    display: none;
   }
   @media screen and (max-width: $break-small) {
-  display: none;
+    display: none;
   }
 }
 
@@ -78,10 +78,10 @@
     padding-left: 120px;
     padding-top: 50px;
     @media screen and (max-width: $break-small) {
-    padding: 0;
-    width: 80%;
-    height: 70px;
-    margin-top: 10%;
+      padding: 0;
+      width: 80%;
+      height: 70px;
+      margin-top: 10%;
     }
     p {
       font-size: 29px;
@@ -115,9 +115,9 @@
       width: 100%;
     }
     @media screen and (max-width: $break-small) {
-    display: inline-block;
-    width: 100%;
-    margin-top: 20px;
+      display: inline-block;
+      width: 100%;
+      margin-top: 20px;
     }
     .line1 {
       width: 100%;
@@ -125,8 +125,8 @@
       margin: 0 auto;
       padding: 0;
       @media screen and (max-width: $break-small) {
-      width: auto;
-      height: auto;
+        width: auto;
+        height: auto;
       }
       .main {
         width: calc(45% - 20px);
@@ -136,21 +136,21 @@
         margin-right: 20px;
         box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.20);
         @media screen and (max-width: $break-medium) {
-        width: 100%;
-        height: auto;
-        margin-bottom: 20px;
+          width: 100%;
+          height: auto;
+          margin-bottom: 20px;
         }
         @media screen and (max-width: $break-small) {
-        width: 100%;
-        height: auto;
-        margin-bottom: 20px;
+          width: 100%;
+          height: auto;
+          margin-bottom: 20px;
         }
         p {
           color: #5D5D5D;
           margin: 20px 50px;
           font-size: 22px;
           @media screen and (max-width: $break-small) {
-          margin: 3px;
+            margin: 3px;
           }
         }
       }
@@ -158,8 +158,8 @@
         width: 55%;
         float: left;
         @media screen and (max-width: $break-medium) {
-        width: auto;
-        height: auto;
+          width: auto;
+          height: auto;
         }
         @media screen and (max-width: $break-small) {
           width: auto;
@@ -185,7 +185,7 @@
               display: none;
             }
             @media screen and (max-width: $break-small) {
-            display: none;
+              display: none;
             }
           }
           p {
@@ -201,11 +201,11 @@
               padding-top: 0;
             }
             @media screen and (max-width: $break-small) {
-            float: none;
-            width: 95%;
-            max-width: 95%;
-            margin: 0 10px;
-            padding-top: 0;
+              float: none;
+              width: 95%;
+              max-width: 95%;
+              margin: 0 10px;
+              padding-top: 0;
             }
           }
           &:last-of-type {
@@ -216,7 +216,7 @@
               text-align: center;
               padding: 0 55px;
               @media screen and (max-width: $break-small) {
-              padding: 0;
+                padding: 0;
               }
             }
           }
@@ -238,15 +238,15 @@
           height: 350px;
           box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.20);
           @media screen and (max-width: $break-medium) {
-          height: 170px;
-          padding: 2% 5px 0px 5px;
+            height: 170px;
+            padding: 2% 5px 0px 5px;
           }
           @media screen and (max-width: $break-small) {
-          width: 100%;
-          float: none;
-          height: auto;
-          margin: 0;
-          margin-bottom: 20px;
+            width: 100%;
+            float: none;
+            height: auto;
+            margin: 0;
+            margin-bottom: 20px;
           }
           #charts3,
           #charts4,
@@ -259,7 +259,7 @@
               display: none;
             }
             @media screen and (max-width: $break-small) {
-            display: none;
+              display: none;
             }
           }
           p {
@@ -267,7 +267,7 @@
             margin: 0px 0px;
             font-size: 22px;
             @media screen and (max-width: $break-small) {
-            margin: 0 10px;
+              margin: 0 10px;
             }
           }
           //la 1er div pour retirer le margin-left au debut
@@ -275,7 +275,7 @@
             width: calc(33.33% - 13px);
             margin-left: 0;
             @media screen and (max-width: $break-small) {
-            width: 100%;
+              width: 100%;
             }
           }
           //la dernier div pour retirer le margin-left à la fin
@@ -283,17 +283,17 @@
             width: calc(33.33% - 13px);
             margin-right: 0;
             @media screen and (max-width: $break-small) {
-            width: 100%;
+              width: 100%;
             }
             p {
               padding: 0 40px;
               @media screen and (max-width: $break-medium) {
-              padding: 0;
-              margin: 0 auto;
+                padding: 0;
+                margin: 0 auto;
               }
               @media screen and (max-width: $break-small) {
-              padding: 0;
-              margin: 0 auto;
+                padding: 0;
+                margin: 0 auto;
               }
             }
           }
@@ -301,144 +301,151 @@
       }
     }
   }
-};
-  .equipeTalo {
+}
+
+;
+.equipeTalo {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  .waveTeam {
     display: inline-block;
+    margin: 0 auto;
+    background-image: url("../../images/vague.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
     width: 100%;
-    height: auto;
-    text-align: center;
-    .waveTeam {
+    max-width: 100%;
+    height: 100px;
+    h2 {
+      font-size: 20px;
+      margin: 10px auto 5px auto;
+      color: $black;
+      @media screen and (max-width: $break-medium) {
+        font-size: 18px;
+      }
+      @media screen and (max-width: $break-small) {
+        font-size: 16px;
+      }
+    }
+    h3 {
+      margin: 0 auto 5px auto;
+      font-size: 15px;
+      color: $blue;
+    }
+    span {
+      font-size: 15px;
+      color: $black;
+    }
+    .blocKhalid {
       display: inline-block;
-      margin: 0 auto;
-      background-image: url("../../images/vague.png");
-      background-position: bottom;
-      background-repeat: no-repeat;
-      width: 100%;
-      max-width: 100%;
-      height: 100px;
-      h2{
-        font-size: 20px;
-        margin: 10px auto 5px auto;
-        color: $black;
-        @media screen and (max-width: $break-medium) {
-          font-size: 18px;
-        }
-        @media screen and (max-width: $break-small) {
-          font-size: 16px;
-        }
+      text-align: center;
+      width: 20%;
+      height: auto;
+      @media screen and (max-width: $break-medium) {
+        margin: 0 20px;
+        width: 30%;
       }
-      h3{
-        margin: 0 auto 5px auto;
-        font-size: 15px;
-        color: $blue;
+      @media screen and (max-width: $break-small) {
+        margin: 0 20px;
+        width: 35%;
       }
-      span{
-        font-size: 15px;
-        color: $black;
-      }
-      .blocKhalid{
+      .roundPP {
         display: inline-block;
-        text-align: center;
-        width: 20%;
-        height: auto;
-        @media screen and (max-width: $break-medium) {
-          margin: 0 20px;
-          width: 30%;
-        }
-        @media screen and (max-width: $break-small) {
-          margin: 0 20px;
-          width: 35%;
-        }
-        .roundPP {
-          display: inline-block;
-          border-radius: 50%;
-          background-color: #F6F704;
-          width: 105px;
-          height: 105px;
-        }
-        .socialRounds{
-          display: inline-block;
-          width: 100%;
-          margin-top: 5px;
-          img{
-            display: inline-block;
-            width: 40px;
-            height: 40px;
-            cursor: pointer;
-          }
-        }
+        border-radius: 50%;
+        background-image: url("../../images/khalid.jpg");
+        background-size: cover;
+        width: 105px;
+        height: 105px;
       }
-      .blocRaphael{
+      .socialRounds {
         display: inline-block;
-        text-align: center;
-        width: 20%;
-        height: auto;
-        @media screen and (max-width: $break-medium) {
-          margin: 0 20px;
-          width: 30%;
-        }
-        @media screen and (max-width: $break-small) {
-          margin: 0 20px;
-          width: 35%;
-        }
-        .roundPP {
+        width: 100%;
+        margin-top: 5px;
+        img {
           display: inline-block;
-          border-radius: 50%;
-          background-color: #F6F704;
-          width: 105px;
-          height: 105px;
-        }
-        .socialRounds{
-          display: inline-block;
-          width: 100%;
-          margin-top: 5px;
-          img{
-            display: inline-block;
-            width: 40px;
-            height: 40px;
-            cursor: pointer;
-          }
-        }
-      }
-      .blocAbdes{
-        display: inline-block;
-        text-align: center;
-        width: 20%;
-        height: auto;
-        @media screen and (max-width: $break-medium) {
-          margin: 0 20px;
-          width: 30%;
-        }
-        @media screen and (max-width: $break-small) {
-          margin: 0 20px;
-          width: 35%;
-        }
-        .roundPP {
-          display: inline-block;
-          border-radius: 50%;
-          background-color: #F6F704;
-          width: 105px;
-          height: 105px;
-        }
-        .socialRounds{
-          display: inline-block;
-          width: 100%;
-          margin-top: 5px;
-          img{
-            display: inline-block;
-            width: 40px;
-            height: 40px;
-            cursor: pointer;
-          }
+          width: 40px;
+          height: 40px;
+          cursor: pointer;
         }
       }
     }
-  };
+    .blocRaphael {
+      display: inline-block;
+      text-align: center;
+      width: 20%;
+      height: auto;
+      @media screen and (max-width: $break-medium) {
+        margin: 0 20px;
+        width: 30%;
+      }
+      @media screen and (max-width: $break-small) {
+        margin: 0 20px;
+        width: 35%;
+      }
+      .roundPP {
+        display: inline-block;
+        border-radius: 50%;
+        background-image: url("../../images/raph.jpg");
+        background-size: cover;
+        width: 105px;
+        height: 105px;
+      }
+      .socialRounds {
+        display: inline-block;
+        width: 100%;
+        margin-top: 5px;
+        img {
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          cursor: pointer;
+        }
+      }
+    }
+    .blocAbdes {
+      display: inline-block;
+      text-align: center;
+      width: 20%;
+      height: auto;
+      @media screen and (max-width: $break-medium) {
+        margin: 0 20px;
+        width: 30%;
+      }
+      @media screen and (max-width: $break-small) {
+        margin: 0 20px;
+        width: 35%;
+      }
+      .roundPP {
+        display: inline-block;
+        border-radius: 50%;
+        background-image: url("../../images/abdes.jpg");
+        background-size: cover;
+        width: 105px;
+        height: 105px;
+      }
+      .socialRounds {
+        display: inline-block;
+        width: 100%;
+        margin-top: 5px;
+        img {
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
 
+;
 .AccomClient {
   display: inline-block;
   width: 100%;
   height: auto;
+  margin-bottom: 40px;
   @media screen and (max-width: $break-small) {
     height: auto;
   }

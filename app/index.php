@@ -3,14 +3,22 @@ require("partials/_header.php");
 require("partials/_nav.php");
 ?>
 
-<!-- by Raphael, responsive raphael -->
-
 <section class="persAnimation">
+  <div id="background-wrap">
+    <div class="x1">
+      <div class="cloud"></div>
+    </div>
+
+    <div class="x2">
+      <div class="cloud"></div>
+    </div>
+
+    <div class="x3">
+      <div class="cloud"></div>
+    </div>
+  </div>
   <img class="taloZen" src="images/character.svg" alt="dessin d'un conseiller de Talo Energy">
 </section>
-
-
-<div class="wave"></div>
 <section class="home1">
   <div class="homeTitle1">
     <span>01</span>
@@ -19,19 +27,19 @@ require("partials/_nav.php");
   <div class="home1Content">
     <img src="images/conseillerTALO.png" alt="dessin d'un conseiller de Talo Energy">
     <div class="blocsHome1 smartHome">
-      <div class="roundH1"><img src="" alt=""></div>
+      <div class="roundH1"><img src="images/smartHomeLogo.png" alt=""></div>
       <h1>Smart Home</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni inventore cumque cum dicta maiores consequuntur quibusdam esse quasi doloribus, soluta illum eos, velit dolorem nihil
       </p>
     </div>
     <div class="blocsHome1 designStudio">
-      <div class="roundH1"><img src="" alt=""></div>
+      <div class="roundH1"><img src="images/designStudioLogo.png" alt=""></div>
       <h1>Design Studio</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni inventore cumque cum dicta maiores consequuntur quibusdam esse quasi doloribus, soluta illum eos, velit dolorem nihil
       </p>
     </div>
     <div class="blocsHome1 handCheck">
-      <div class="roundH1"><img src="" alt=""></div>
+      <div class="roundH1"><img src="images/logoWorker.png" alt=""></div>
       <h1>Partenaires</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni inventore cumque cum dicta maiores consequuntur quibusdam esse quasi doloribus, soluta illum eos, velit dolorem nihil
       </p>
@@ -127,7 +135,6 @@ require("partials/_nav.php");
     </div>
   </div>
 </section>
-
 <section class="home4">
   <div class="homeTitle4">
     <span>04</span>

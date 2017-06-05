@@ -2,16 +2,15 @@
 require("partials/_header.php");
 require("partials/_nav.php");
 ?>
-<!-- by Sabrina, responsive raphael -->
 
-<section class="DivBlueET">
+<section class="DivBlueET home1">
   <div class="taloTitle">
     <span>TALO</span>
     <p>La vision de TALO ENERGY</p>
   </div>
   <div class="textIntro">
     <p>
-      <strong>  TALO Energy</strong>,c’est avant tout une <strong>rencontre humaine </strong>autour d’une ambition commune : rendre <strong>accessible et accélérer la transition énergétique grâce au numérique. </strong>
+      <strong>  TALO Energy</strong>, c’est avant tout une <strong>rencontre humaine </strong>autour d’une ambition commune : rendre <strong>accessible et accélérer la transition énergétique grâce au numérique. </strong>
     </p>
     <p>
       <strong>TALO Energy </strong>permettra à chaque citoyen de prendre le <strong>contrôle </strong>de son habitat et de piloter sa consommation d’énergie. C’est pourquoi notre plateforme interviendra sur toute la chaîne de valeur d’une rénovation énergétique permettant de comprendre puis d’accéder à des prestations <strong>sans intermédiaire, dans un secteur où les prix croient au rythme des subventions.</strong>
@@ -58,43 +57,43 @@ require("partials/_nav.php");
   </section>
 </section>
 
-  <section class="equipeTalo">
-    <div class="waveTeam">
-      <div class="blocKhalid">
-        <div class="roundPP"></div>
-        <h2> Khalid CHAIB</h2>
-        <h3>Co-fondateur</h3>
-        <span>Business et partenariat</span>
-        <div class="socialRounds">
-          <img src="images/facebook.png" alt="">
-          <img src="images/twitter.png" alt="">
-          <img src="images/instagram.png" alt="">
-        </div>
-      </div>
-      <div class="blocRaphael">
-        <div class="roundPP"></div>
-        <h2> Raphaël NEVES</h2>
-        <h3>Co-fondateur</h3>
-        <span>Logistique et Technique</span>
-        <div class="socialRounds">
-          <img src="images/facebook.png" alt="">
-          <img src="images/twitter.png" alt="">
-          <img src="images/instagram.png" alt="">
-        </div>
-      </div>
-      <div class="blocAbdes">
-        <div class="roundPP"></div>
-        <h2> Abdessamad IDZINA</h2>
-        <h3>Co-fondateur</h3>
-        <span>Marketing et Digital</span>
-        <div class="socialRounds">
-          <img src="images/facebook.png" alt="">
-          <img src="images/twitter.png" alt="">
-          <img src="images/instagram.png" alt="">
-        </div>
+<section class="equipeTalo">
+  <div class="waveTeam">
+    <div class="blocKhalid">
+      <div class="roundPP"></div>
+      <h2> Khalid CHAIB</h2>
+      <h3>Co-fondateur</h3>
+      <span>Business et partenariat</span>
+      <div class="socialRounds">
+        <img src="images/facebook.png" alt="">
+        <img src="images/twitter.png" alt="">
+        <img src="images/instagram.png" alt="">
       </div>
     </div>
-  </section>
+    <div class="blocRaphael">
+      <div class="roundPP"></div>
+      <h2> Raphaël NEVES</h2>
+      <h3>Co-fondateur</h3>
+      <span>Logistique et Technique</span>
+      <div class="socialRounds">
+        <img src="images/facebook.png" alt="">
+        <img src="images/twitter.png" alt="">
+        <img src="images/instagram.png" alt="">
+      </div>
+    </div>
+    <div class="blocAbdes">
+      <div class="roundPP"></div>
+      <h2> Abdessamad IDZINA</h2>
+      <h3>Co-fondateur</h3>
+      <span>Marketing et Digital</span>
+      <div class="socialRounds">
+        <img src="images/facebook.png" alt="">
+        <img src="images/twitter.png" alt="">
+        <img src="images/instagram.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>
 
 
 <section class="AccomClient">
@@ -103,32 +102,32 @@ require("partials/_nav.php");
     <p>L’accompagnement du client</p>
   </div>
 
-  <div class="blueParagraphe">
+  <div class="blueParagraphe home1">
     <span class="numeroSection">#1</span>
     <p class="parSection">Chez TALO Energy, l’accompagnent du client est notre priorité. C’est pourquoi nous avons décidé de vous aider dans la configuration de votre produit en ligne avec l’appui d’un conseiller qualifié.
     </p>
   </div>
 
-  <div class="whiteParagraphe">
+  <div class="whiteParagraphe home1">
     <span class="numeroSection">#2</span>
     <p class="parSection">
       Ensuite, un de nos artisans certifié valide les côtes de votre fenêtre.
     </p>
   </div>
 
-  <div class="blueParagraphe">
+  <div class="blueParagraphe home1">
     <span class="numeroSection">#3</span>
     <p class="parSection">Une fois cette étape réalisé, vous payez vos fenêtres en ligne, nous nous chargeons de la commande auprès de nos partenaires et en fonctions de vos demandes. </p>
   </div>
 
-  <div class="whiteParagraphe">
+  <div class="whiteParagraphe home1">
     <span class="numeroSection">#4</span>
     <p class="parSection">
       Vos fenêtres vous sont livrées et un artisan de votre choix arrive chez vous pour procéder à la pose.
     </p>
   </div>
 
-  <div class="blueParagraphe">
+  <div class="blueParagraphe home1">
     <span class="numeroSection">#5</span>
     <p class="parSection"> Et voilà, en deux temps trois mouvements, les fenêtres que vous avez choisies sont posées et améliorent le bilan énergétique de votre domicile !
     </p>

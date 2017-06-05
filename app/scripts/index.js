@@ -1,20 +1,27 @@
 $(document).ready(function () {
+  $(function () {
+    var x = 0;
+    setInterval(function () {
+      x += 0.5;
+      $('.cloud').css('background-position', x + 'px 0');
+    }, 10);
+  });
+
   $('.center').slick({
     centerMode: true,
+    arrows : false,
     centerPadding: '0px',
     slidesToShow: 3,
     infinite: true,
-    dots: true,
     autoplay: true,
     autoplaySpeed: 1500,
     responsive: [
       {
         breakpoint: 768,
         settings: {
-          arrows: true,
-          dots: true,
           infinite: true,
           autoplay: true,
+          arrows : false,
           autoplaySpeed: 1500,
           centerMode: true,
           centerPadding: '40px',
@@ -26,9 +33,9 @@ $(document).ready(function () {
         settings: {
           autoplay: true,
           autoplaySpeed: 1500,
+          arrows : false,
           infinite: true,
           centerMode: true,
-          dots: true,
           centerPadding: '40px',
           slidesToShow: 1
         }
@@ -37,20 +44,20 @@ $(document).ready(function () {
   });
 
   $('.one-time').slick({
-    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     autoplay: true,
+    arrows : false,
     autoplaySpeed: 2000,
     adaptiveHeight: true,
     responsive: [
       {
         breakpoint: 768,
         settings: {
-          dots: true,
           infinite: true,
           autoplay: true,
+          arrows : false,
           autoplaySpeed: 2000,
           speed: 500,
           slidesToShow: 1,
@@ -60,9 +67,9 @@ $(document).ready(function () {
       {
         breakpoint: 375,
         settings: {
-          dots: true,
           infinite: true,
           autoplay: true,
+          arrows : false,
           autoplaySpeed: 2000,
           speed: 500,
           slidesToShow: 1,

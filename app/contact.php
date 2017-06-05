@@ -1,39 +1,39 @@
 <?php
+ini_set("display_errors",0);error_reporting(0);
+require("styles/partials/fonction.php");
 require("partials/_header.php");
 require("partials/_nav.php");
 ?>
-<!-- by Sabrina, responsive raphael -->
-
 <section class="DivBlue">
   <div class="contactTitle">
     <span>Contact</span>
     <p>Restons en <strong>contact</strong></p>
   </div>
-  <section class="formulaire">
+  <section class="formm">
     <form class="form-horizontal" role="form" method="post" action="contact.php">
       <div class="form-group nom">
-        <div class="col">
-          <input type="text" class="form-control nomPrenom" id="name" name="nom" placeholder="Nom" value="">
+        <div class="col-md-12 col-sm-12">
+          <input type="text" class="form-control nomPrenom" id="name" name="nom" placeholder="Nom" value="" required="required">
         </div>
       </div>
       <div class="form-group prenom">
-        <div class="col">
-          <input type="text" class="form-control" id="name" name="prenom" placeholder="Prénom" value="">
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="col-lg">
-          <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
+        <div class="col-md-12 col-sm-12">
+          <input type="text" class="form-control" id="name" name="prenom" placeholder="Prénom" value="" required="required">
         </div>
       </div>
       <div class="form-group">
         <div class="col-md-12 col-sm-12">
-          <textarea class="form-control message" rows="4" name="message"></textarea>
+          <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="" required="required">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-md-12 col-sm-12">
+          <textarea class="form-control message" rows="4" name="message" required="required"></textarea>
         </div>
       </div>
       <div class="form-group">
         <div class="col-sm-offset-1">
-          <input id="submit" name="submit" type="submit" value="Envoyez" class="btn btn-primary">
+          <input id="submit" name="submit" type="submit" value="Envoyer" class="btn btn-primary">
         </div>
       </div>
     </form>
@@ -62,10 +62,10 @@ require("partials/_nav.php");
       <img src="images/instagram.png" alt="icone de thermomètre">
     </div>
   </div>
-  <p>Par mail, à l’adresse suivante</p>
-  <p class="contactTalo">contac@taloenergy.fr</p>
-  <p>Et par téléphone au </p>
-  <p class="contactTalo">01 02 03 04 05</p>
+  <p class="contactTaloBlack">Par mail, à l’adresse suivante</p>
+  <p class="contactTaloBlue">contac@taloenergy.fr</p>
+  <p class="contactTaloBlack">Et par téléphone au </p>
+  <p class="contactTaloBlue">01 02 03 04 05</p>
 </section>
 
 <?php
@@ -78,12 +78,29 @@ if (isset($_POST['submit'])) {
   $usrmail = $_POST["email"];
   $msg = $_POST["message"];
 
-  if (empty($usrmail)) {
-    echo 'Please enter your email';
 
-    return;
-  }
+  if(not_empty(['nom', 'prenom', 'email', 'message']))
+    {
+        $errors = [];
+        extract($_POST);
 
+        if(mb_strlen($nom)<  1)
+      {
+          array_push($errors, "Il faut remplir le champ Nom");
+      }
+      if(mb_strlen($prenom)< 1)
+      {
+          array_push($errors, "Il faut remplir le champ Prénom");
+      }
+
+        if(! filter_var($email, FILTER_VALIDATE_EMAIL))
+        {
+            array_push($errors, "Adresse email invalide");
+        }
+
+
+  if(count($errors) === 0)
+          {
   //$mail->isSMTP();
   //$mail->SMTPDebug = 2;                               // Enable verbose debug output
                                      // Set mailer to use SMTP
@@ -105,14 +122,28 @@ if (isset($_POST['submit'])) {
 
   $mail->Subject =  "Mail contact ";
   $mail->Body    =  "Nom: $nom Prénom: $prenom\n \n $msg";
-
   if(!$mail->send()) {
     echo 'Message could not be sent.';
     echo 'Mailer Error: ' . $mail->ErrorInfo;
-  } else {
+  }
+
+  else {
     echo "<script>alert(\"Votre message a bien été envoyé !\")</script>";
   }
+
 }
+  else
+  {
+      $errors[] = "Veuillez S'il vous plait remplir tout les champs";
+  }
+
+}
+
+
+}
+
+
+
 ?>
   <?php require("partials/_footer.php");
  ?>

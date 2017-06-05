@@ -1,16 +1,16 @@
 <div class="wave3"></div>
 <footer class="footer">
-  <img src="images/logoTaloWhite.png" alt="logo de Talo Energy en blanc">
-  <h2>Talo Energy</h2>
+  <img src="images/logoblanc.png" alt="logo de Talo Energy en blanc">
   <div class="infosFooter">
     <span>©2017 - TALO ENERGY</span>
-    <span><a href="#">CONTACT</a></span>
-    <span><a href="#">CGV</a></span>
-    <span><a href="#">MENTIONS LÉGALES</a></span>
+    <p>
+      <span><a href="contact.php">CONTACT</a></span>
+      <span><a href="#">MENTIONS LÉGALES</a></span>
+    </P>
   </div>
 </footer>
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-<script src='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
