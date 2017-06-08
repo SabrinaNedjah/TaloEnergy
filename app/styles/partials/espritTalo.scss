@@ -372,40 +372,6 @@
         }
       }
     }
-    .blocRaphael {
-      display: inline-block;
-      text-align: center;
-      width: 20%;
-      height: auto;
-      @media screen and (max-width: $break-medium) {
-        margin: 0 20px;
-        width: 30%;
-      }
-      @media screen and (max-width: $break-small) {
-        margin: 0 20px;
-        width: 35%;
-      }
-      .roundPP {
-        display: inline-block;
-        border-radius: 50%;
-        background-image: url("../../images/raph.jpg");
-        background-size: cover;
-        width: 105px;
-        height: 105px;
-         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-      }
-      .socialRounds {
-        display: inline-block;
-        width: 100%;
-        margin-top: 5px;
-        img {
-          display: inline-block;
-          width: 40px;
-          height: 40px;
-          cursor: pointer;
-        }
-      }
-    }
     .blocAbdes {
       display: inline-block;
       text-align: center;

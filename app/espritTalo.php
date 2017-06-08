@@ -69,17 +69,6 @@ require("partials/_nav.php");
         <img src="images/instagram.png" alt="">
       </div>
     </div>
-    <div class="blocRaphael">
-      <div class="roundPP"></div>
-      <h2> Raphaël NEVES</h2>
-      <h3>Co-fondateur</h3>
-      <span>Logistique et Technique</span>
-      <div class="socialRounds">
-        <img src="images/facebook.png" alt="">
-        <img src="images/twitter.png" alt="">
-        <img src="images/instagram.png" alt="">
-      </div>
-    </div>
     <div class="blocAbdes">
       <div class="roundPP"></div>
       <h2> Abdessamad IDZINA</h2>

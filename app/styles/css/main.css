@@ -1731,36 +1731,6 @@ body {
           width: 40px;
           height: 40px;
           cursor: pointer; }
-    .equipeTalo .waveTeam .blocRaphael {
-      display: inline-block;
-      text-align: center;
-      width: 20%;
-      height: auto; }
-      @media screen and (max-width: 1024px) {
-        .equipeTalo .waveTeam .blocRaphael {
-          margin: 0 20px;
-          width: 30%; } }
-      @media screen and (max-width: 665px) {
-        .equipeTalo .waveTeam .blocRaphael {
-          margin: 0 20px;
-          width: 35%; } }
-      .equipeTalo .waveTeam .blocRaphael .roundPP {
-        display: inline-block;
-        border-radius: 50%;
-        background-image: url("../../images/raph.jpg");
-        background-size: cover;
-        width: 105px;
-        height: 105px;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
-      .equipeTalo .waveTeam .blocRaphael .socialRounds {
-        display: inline-block;
-        width: 100%;
-        margin-top: 5px; }
-        .equipeTalo .waveTeam .blocRaphael .socialRounds img {
-          display: inline-block;
-          width: 40px;
-          height: 40px;
-          cursor: pointer; }
     .equipeTalo .waveTeam .blocAbdes {
       display: inline-block;
       text-align: center;
