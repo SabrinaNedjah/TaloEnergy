@@ -59,47 +59,49 @@ require("partials/_nav.php");
   <h4 class="text-left secondTitle">Comment ça fonctionne ?</h4>
   <span class="pro proSecond">PRO</span>
 </div>
-<div class="row home1">
-  <div class="msgLeftSide col-xs-10 col-md-4 col-md-offset-2 text-left firstMsg shadow">
-    <div class="text-left ballRelative">
-      <div class="ballTalo">
-        <img src="images/logoTaloWhite.png" alt="Logo Talo" class="imageTaloBall">
+<div class="container">
+  <div class="row">
+    <div class="msgLeftSide col-xs-10 col-md-4 col-md-offset-2 text-left firstMsg shadow">
+      <div class="text-left ballRelative">
+        <div class="ballTalo">
+          <img src="images/logoTaloWhite.png" alt="Logo Talo" class="imageTaloBall">
+        </div>
+        <div class="convoLeft titleConvo">Configuration en ligne</div>
+        <div class="convoLeft"> Nos clients configurent leurs produits sur notre Site Internet. Un expert TALO Energy l’accompagne tout au long de son projet pour spécifier son besoin. </div>
       </div>
-      <div class="convoLeft titleConvo">Configuration en ligne</div>
-      <div class="convoLeft"> Nos clients configurent leurs produits sur notre Site Internet. Un expert TALO Energy l’accompagne tout au long de son projet pour spécifier son besoin. </div>
     </div>
   </div>
-</div>
-<div class="row">
-  <div class="msgRightSide col-xs-10 col-md-4 col-md-offset-5 text-left shadow">
-    <div class="ballRelative">
-      <div class="ballWorker">
-        <img src="images/logoWorker.png" alt="logo Worker" class="workerBall">
+  <div class="row">
+    <div class="msgRightSide col-xs-10 col-md-4 col-md-offset-5 text-left shadow">
+      <div class="ballRelative">
+        <div class="ballWorker">
+          <img src="images/logoWorker.png" alt="logo Worker" class="workerBall">
+        </div>
+        <div class="titleConvo convoRight">Validations des côtes de l'artisants</div>
+        <div class="convoRight">Nous vous proposons l’installation du chantier. Vous réalisez un mêtré et confirmez votre capacité à réaliser le chantier. C’est aussi l’occasion de conseiller nos clients sur des éléments techniques. Vous êtes rémunérés pour ce déplacement. </div>
       </div>
-      <div class="titleConvo convoRight">Validations des côtes de l'artisants</div>
-      <div class="convoRight">Nous vous proposons l’installation du chantier. Vous réalisez un mêtré et confirmez votre capacité à réaliser le chantier. C’est aussi l’occasion de conseiller nos clients sur des éléments techniques. Vous êtes rémunérés pour ce déplacement. </div>
     </div>
   </div>
-</div>
-<div class="row home1">
-  <div class="msgLeftSide col-xs-10  col-md-4 col-md-offset-2 text-left shadow">
-    <div class="ballRelative">
-      <div class="ballTalo">
-        <img src="images/logoTaloWhite.png" alt="Logo Talo" class="imageTaloBall">
+  <div class="row">
+    <div class="msgLeftSide col-xs-10  col-md-4 col-md-offset-2 text-left shadow">
+      <div class="ballRelative">
+        <div class="ballTalo">
+          <img src="images/logoTaloWhite.png" alt="Logo Talo" class="imageTaloBall">
+        </div>
+        <div class="titleConvo convoLeft">Commande & livraison</div>
+        <div class="convoLeft"> Nous commandons le produit auprès de nos usines partenaires et définissons une date d’installation avec le client. </div>
       </div>
-      <div class="titleConvo convoLeft">Commande & livraison</div>
-      <div class="convoLeft"> Nous commandons le produit auprès de nos usines partenaires et définissons une date d’installation avec le client. </div>
     </div>
   </div>
-</div>
-<div class="row ">
-  <div class="msgRightSide col-xs-10  col-md-4 col-md-offset-5 text-left shadow">
-    <div class="ballRelative">
-      <div class="ballWorker">
-        <img src="images/logoWorker.png" alt="logo Worker" class="workerBall">
+  <div class="row ">
+    <div class="msgRightSide col-xs-10  col-md-4 col-md-offset-5 text-left shadow">
+      <div class="ballRelative">
+        <div class="ballWorker">
+          <img src="images/logoWorker.png" alt="logo Worker" class="workerBall">
+        </div>
+        <div class="titleConvo convoRight">Installation du produit par l’artisan</div>
+        <div class="convoRight"> Vous livrez le produit de notre entrepôt directement chez le client et assurez l’installation et d’éventuels SAV ! </div>
       </div>
-      <div class="titleConvo convoRight">Installation du produit par l’artisan</div>
-      <div class="convoRight"> Vous livrez le produit de notre entrepôt directement chez le client et assurez l’installation et d’éventuels SAV ! </div>
     </div>
   </div>
 </div>

@@ -38,11 +38,13 @@ h2.underTitle {
 
 .presentation {
   height: auto;
+  margin: 0 auto;
   .casePart1 {
     padding: 10px;
     margin-bottom: 20px;
     background: #EBEBEB;
     height: 380px;
+     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     @media screen and (max-width: $break-medium) {
       height: auto;
       padding: 10px;
@@ -172,6 +174,7 @@ Second part
 .msgRightSide,
 .msgLeftSide {
   margin-bottom: 24px;
+   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .secondTitle {
@@ -197,7 +200,7 @@ Third part
   .relProWhite {
     position: relative;
     margin-top: 30px;
-    margin-left: 20px;
+    padding-left: 20px;
     width: 100%;
     .thirdTitle {
       font-weight: bold;

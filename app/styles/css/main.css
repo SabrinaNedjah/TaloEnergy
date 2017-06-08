@@ -640,8 +640,9 @@
 
 body {
   background-color: #F6F6F6;
-  margin: 0;
-  max-width: 100%; }
+  margin: 0 auto;
+  max-width: 100%;
+  background-image: url("../../images/pattern.png"); }
 
 .hamburgerHeader {
   outline: 0;
@@ -917,7 +918,8 @@ body {
       height: 440px;
       background-color: #EBEBEB;
       margin-top: 40px;
-      margin-right: 40px; }
+      margin-right: 40px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
       @media screen and (max-width: 665px) {
         .home1 .home1Content .blocsHome1 {
           width: 90%;
@@ -1008,7 +1010,8 @@ body {
     background-color: #009db2; }
     .home2 .slider .center-slide {
       display: inline-block;
-      margin: 30px; }
+      margin: 30px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
       @media screen and (max-width: 665px) {
         .home2 .slider .center-slide {
           margin: 10px; } }
@@ -1083,7 +1086,7 @@ body {
     padding-right: 60px;
     background-color: #EBEBEB;
     height: 150px;
-    box-shadow: 0 3px 6px 0 #EBEBEB; }
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
     @media screen and (max-width: 665px) {
       .home3 .priceQuote {
         display: none; } }
@@ -1157,7 +1160,7 @@ body {
   .home4 a {
     display: inline-block;
     padding: 0px 40px 5px 40px;
-    box-shadow: 0 3px 1px 3px #EBEBEB;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     background-color: #EBEBEB;
     font-size: 28px;
     color: #00B4CB;
@@ -1172,7 +1175,7 @@ body {
   display: inline-block;
   width: 100%;
   height: 82px;
-  box-shadow: 0px 20px 0px 20px #00B4CB;
+  box-shadow: 0px 10px 0px 0px #00B4CB;
   margin: 0 auto;
   background-image: url("../../images/wave3.png");
   background-position: top;
@@ -1279,7 +1282,8 @@ body {
       border: solid #00B4CB 2px;
       text-decoration: none;
       transition-duration: 0.3s;
-      margin-left: 0; }
+      margin-left: 0;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
     .DivBlue .formm .btn:hover {
       text-decoration: none;
       background: #00B4CB;
@@ -1517,7 +1521,7 @@ body {
         float: left;
         background: #F6F6F6;
         margin-right: 20px;
-        box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2); }
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
         @media screen and (max-width: 1024px) {
           .DivBlueET .graphique .line1 .main {
             width: 100%;
@@ -1716,7 +1720,8 @@ body {
         background-image: url("../../images/khalid.jpg");
         background-size: cover;
         width: 105px;
-        height: 105px; }
+        height: 105px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
       .equipeTalo .waveTeam .blocKhalid .socialRounds {
         display: inline-block;
         width: 100%;
@@ -1745,7 +1750,8 @@ body {
         background-image: url("../../images/raph.jpg");
         background-size: cover;
         width: 105px;
-        height: 105px; }
+        height: 105px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
       .equipeTalo .waveTeam .blocRaphael .socialRounds {
         display: inline-block;
         width: 100%;
@@ -1774,7 +1780,8 @@ body {
         background-image: url("../../images/abdes.jpg");
         background-size: cover;
         width: 105px;
-        height: 105px; }
+        height: 105px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
       .equipeTalo .waveTeam .blocAbdes .socialRounds {
         display: inline-block;
         width: 100%;
@@ -1835,7 +1842,7 @@ body {
     position: relative;
     left: 117px;
     margin-bottom: 10px;
-    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
     @media screen and (max-width: 1024px) {
       .AccomClient .blueParagraphe {
         width: 100%;
@@ -1879,7 +1886,7 @@ body {
     left: 117px;
     position: relative;
     margin-bottom: 10px;
-    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
     @media screen and (max-width: 1024px) {
       .AccomClient .whiteParagraphe {
         width: 100%;
@@ -1945,12 +1952,14 @@ h2.underTitle {
   font-size: 2.500em; }
 
 .presentation {
-  height: auto; }
+  height: auto;
+  margin: 0 auto; }
   .presentation .casePart1 {
     padding: 10px;
     margin-bottom: 20px;
     background: #EBEBEB;
-    height: 380px; }
+    height: 380px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
     @media screen and (max-width: 1024px) {
       .presentation .casePart1 {
         height: auto;
@@ -2059,7 +2068,8 @@ Second part
 
 .msgRightSide,
 .msgLeftSide {
-  margin-bottom: 24px; }
+  margin-bottom: 24px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
 
 .secondTitle {
   margin-bottom: 40px;
@@ -2079,7 +2089,7 @@ Third part
   .blue .relProWhite {
     position: relative;
     margin-top: 30px;
-    margin-left: 20px;
+    padding-left: 20px;
     width: 100%; }
     .blue .relProWhite .thirdTitle {
       font-weight: bold;
